@@ -144,6 +144,8 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-position: center
+  ob;
 }
 
 .banner-overlay {
