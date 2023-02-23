@@ -1,0 +1,504 @@
+body,
+html {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+}
+
+h1,
+h2,
+h3, 
+h4, input{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+input::placeholder {
+    color: rgb(158, 155, 156) !important;
+  }
+
+.ui.button, .ui.form .field > label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+/* ***************** MOBILE-MENU ***************** */
+
+.ui.sidebar.inverted.right.vertical.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ui.inverted.menu .active.item {
+  color: #21ba45 !important;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.phone-menu {
+  color: #fff;
+  background-color: #21ba45;
+  padding: 12px 14px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.ui.inverted.menu .item {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.phone-menu:active {
+  color: #fff;
+  background-color: #21ba45;
+  margin: 3px;
+  font-size: 1em;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* ***************** MOBILE-MENU END ***************** */
+
+/* ***************** NAV ***************** */
+
+.top-nav {
+  position: absolute;
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.logo {
+  width: 150px;
+}
+
+.logo-menu {
+  width: 180px;
+  border-bottom: #8b89897b 1px solid;
+}
+
+.top-nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 17px;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-nav a.menu-item {
+  font-size: 1.4em;
+}
+
+.top-nav .mobile-menu-btn {
+  display: none;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-nav .menu-top .menu-item:hover {
+  background-color: #21ba45a9;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+  background-color: #21ba45;
+  color: white;
+}
+
+/* ***************** NAV END ***************** */
+
+/* ***************** BANNER ***************** */
+
+#banner-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('/media/swift\ banner.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-overlay {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  /* height: 100%; */
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0);
+}
+
+.card {
+  color: #fff;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.card-heading {
+  border-bottom: #94949480 1px solid;
+  width: fit-content;
+  font-size: 2.2em;
+}
+
+.card-content {
+  font-size: 1.6em;
+}
+
+.banner-btn {
+  float: right;
+  /* margin: 0 20px 0 0; */
+}
+
+.banner-btn:hover {
+  float: right;
+  background-color: #21ba45ab;
+  /* margin: 0 20px 0 0; */
+}
+
+/* ***************** BANNER END ***************** */
+
+/* ***************** RECYCLE BANNER *************** */
+
+#recycle-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #21ba45;
+  padding: 20px 0;
+}
+
+#recycle-banner h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* ***************** RECYCLE BANNER END *************** */
+
+/* ***************** CONTACT ***************** */
+
+.form-heading{
+color: #21ba45;
+  font-size: 1.65rem;
+  border-bottom: 1px solid #21ba4564;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/media/swift\ banner.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#form-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  margin-top: 10%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+h4.ui.dividing.header {
+  color: #fff;
+}
+
+.background-img {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.ui.form .field > label {
+  color: #fff;
+}
+
+.ui.button.green {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ***************** CONTACT END ***************** */
+
+/* ***************** FOOTER ***************** */
+
+#footer-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #1f2f44;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    flex-direction: column;
+    
+}
+
+.footer-content a {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: 200;
+}
+
+.footer-content a:hover {
+    color: #21ba45;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.footer-content-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21ba45;
+    color: #fff;
+    padding: 10px;
+    font-weight: 300;
+}
+
+/* ***************** FOOTER END ***************** */
+
+/* ***************** WORK ***************** */
+.work-wrap{
+  width:100%;
+  height:100vh;
+}
+.work-banner{
+  background-image: url('/media/Roof_plate.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.banner-header{
+  font-size: 40px;
+  color:white;
+  z-index: 2;
+}
+.work-overlay{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 500px;
+  position:absolute;
+}
+.gallery-heading{
+  width:100%;
+  font-size: 30px;
+  margin: 20px 0;
+  text-align: center;
+}
+.work-section{
+  display:flex;
+  padding:0 0;
+}
+.work-content{
+  padding:40px 40px;
+  font-size: 1.6em;
+  text-align: left;
+}
+.work-content2{
+  background-color: #fafafa;
+  padding:40px 40px;
+  font-size: 1.6em;
+  text-align: right;
+}
+.work-heading{
+  font-size: 25px;
+}
+.work-image{
+  border-radius: 5px;
+  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.6);
+  margin:40px;
+}
+.work-image2{
+  border-radius: 5px;
+  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.6);
+  margin:40px;
+  background-color: #fafafa;
+}
+.work-button:hover{
+  background-color: #21ba45ab;
+}
+/* ***************** WORK END ***************** */
+
+/* ***************** MEDIA QUERIES ***************** */
+
+@media screen and (max-width: 960px) {
+  .top-nav .mobile-menu-btn {
+    display: flex;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .top-nav .menu-top {
+    display: none;
+  }
+
+  #form-wrap {
+    margin-top: 15%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 80%;
+  }
+
+  .card-content {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .banner-btn {
+    float: right;
+  }
+
+  .banner-btn:hover {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #form-wrap {
+    margin-top: 20%;
+  }
+
+  .card {
+    color: #fff;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  .card-heading {
+    border-bottom: #94949480 1px solid;
+    width: fit-content;
+    font-size: 2.2em;
+  }
+
+  .card-content {
+    font-size: 1.6em;
+  }
+
+  .banner-btn {
+    float: right;
+  }
+
+  .banner-btn:hover {
+    float: right;
+    background-color: #018856;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #form-wrap {
+    margin-top: 30%;
+  }
+  .card {
+    width: 90%;
+    text-align: center;
+  }
+  .card-heading {
+    border-bottom: #94949480 1px solid;
+    width: fit-content;
+    font-size: 2em;
+  }
+
+  .card-content {
+    font-size: 1.4em;
+  }
+  #recycle-banner h3 {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    flex-direction: column;
+    
+}
+
+.footer-content a {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px;
+    font-weight: 200;
+}
+
+.footer-content a:hover {
+    color: #21ba45;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+  
+}
