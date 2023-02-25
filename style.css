@@ -1,28 +1,26 @@
 body,
 html {
+  /* width: 100vw; */
   font-family: 'Lato', sans-serif;
   font-weight: 200;
 }
 
 h1,
 h2,
-h3, 
-h4, input{
+h3,
+h4,
+input {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
 
-input::placeholder {
-    color: rgb(158, 155, 156) !important;
-  }
-
-.ui.button, .ui.form .field > label {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 1.1rem;
+ul {
+  list-style: none;
+  margin: 0 20px 0 20px;
+  padding-inline-start: 0px;
 }
 
-/* ***************** MOBILE-MENU ***************** */
+/* ***************** ALL | Navigation Mobile |  *****************   Luke */
 
 .ui.sidebar.inverted.right.vertical.menu {
   display: flex;
@@ -66,9 +64,9 @@ button {
   border-radius: 10px;
 }
 
-/* ***************** MOBILE-MENU END ***************** */
+/* ***************** ALL | Navigation Mobile | END *****************   Luke */
 
-/* ***************** NAV ***************** */
+/* ***************** ALL | Navigation Main | *****************   Luke */
 
 .top-nav {
   position: absolute;
@@ -129,9 +127,29 @@ button {
   color: white;
 }
 
-/* ***************** NAV END ***************** */
+.main-btn {
+  background-color: #21ba45;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-in-out;
+}
+.main-btn:active {
+  background-color: #21ba45;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 18px;
+  margin: 1px 2px 1px 0;
+  box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.6);
+}
+/* ***************** ALL | Navigation Main | END *****************   Luke */
 
-/* ***************** BANNER ***************** */
+/* ***************** HOME | Banner | *****************   Luke */
 
 #banner-wrap {
   width: 100%;
@@ -144,15 +162,14 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  object-position: center
-  ob;
+  object-position: center;
 }
 
 .banner-overlay {
   width: 100%;
+  min-width: 322px;
   height: 100vh;
   min-height: 500px;
-  /* height: 100%; */
   position: absolute;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -181,18 +198,16 @@ button {
 
 .banner-btn {
   float: right;
-  /* margin: 0 20px 0 0; */
 }
 
 .banner-btn:hover {
   float: right;
   background-color: #21ba45ab;
-  /* margin: 0 20px 0 0; */
 }
 
-/* ***************** BANNER END ***************** */
+/* ***************** HOME | Banner | END *****************   Luke */
 
-/* ***************** RECYCLE BANNER *************** */
+/* ***************** HOME | Recycle Banner | ***************   Luke */
 
 #recycle-banner {
   width: 100%;
@@ -208,12 +223,323 @@ button {
   color: #fff;
 }
 
-/* ***************** RECYCLE BANNER END *************** */
+/* ***************** HOME | Recycle Banner | END ***************   Luke */
 
-/* ***************** CONTACT ***************** */
+/* ***************** HOME | Work Section  ***************  Luke */
 
-.form-heading{
-color: #21ba45;
+.info-wrap {
+  width: 100%;
+}
+
+.section-heading-wrap {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  padding: 0 0;
+}
+
+.info-right {
+  background-color: #fafafa;
+}
+
+.section-heading {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.long-wrap {
+  width: 100%;
+  color: #fff;
+  background-color: #21ba45;
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 10px;
+  box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.long {
+  width: 100%;
+  color: #fff;
+  background-color: #21ba45;
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.info-content {
+  padding: 40px 40px;
+  font-size: 1.6em;
+}
+
+.info-content-right {
+  text-align: left;
+}
+
+.info-content-left {
+  text-align: right;
+}
+
+.info-heading {
+  font-size: 1.8rem;
+}
+
+.info-image-left {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  margin: 40px;
+  max-height: 300px;
+}
+.info-image-right {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  margin: 40px;
+  max-height: 300px;
+}
+
+.info-button {
+  font-size: 1.2rem;
+  background-color: #21ba45ab;
+}
+
+.info-button:hover {
+  background-color: #21ba45ab;
+}
+.info-img {
+  width: 50vw;
+  /* height: 50vh; */
+  object-position: center;
+  object-fit: cover;
+}
+/* ***************** HOME | Work Section | END ***************  Luke */
+
+/* ***************** HOME | Quote Section  ***************  Luke */
+
+#quote-wrap {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/media/quote-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-position: center;
+  z-index: 1;
+}
+.quote-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-width: 322px;
+  /* z-index: 2; */
+  width: 100%;
+  height: 300px;
+}
+
+.quote-heading {
+  position: relative;
+  color: #fff;
+  /* z-index: 5; */
+  font-size: 3em;
+  font-weight: 400;
+  z-index: 2;
+}
+#free-txt {
+  color: #21ba45;
+}
+
+#quote-btn {
+  position: relative;
+  color: #fff;
+  background-color: #0b591dd8;
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: #fff 2px solid;
+  transition: all 0.2s ease-in-out;
+}
+#quote-btn:active {
+  position: relative;
+  color: #fff;
+  background-color: #0b591dd8;
+  font-size: 0.9em;
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: #fff 2px solid;
+}
+
+/* ***************** HOME | Quote Section | END ***************  Luke */
+
+/* ***************** HOME | Services Section | END ***************  Luke */
+
+.services-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+
+.services-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.3em;
+  color: #000;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.services-content-1,
+.services-content-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-item {
+  padding: 0 0 20px 0;
+}
+
+/* ***************** HOME | Services Section | END ***************  Luke */
+
+/* ***************** HOME | Testimonial Section ***************  Luke */
+
+.slider-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  background-image: url('/media/swift\ banner.jpeg');
+}
+
+.slider-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+}
+
+.slides-container {
+  height: calc(500px - 2rem);
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-arrow {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0 100px;
+  height: 4rem;
+  background-color: white;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+  z-index: 2;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+
+#slide-arrow-prev {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+  z-index: 3;
+}
+
+#slide-arrow-next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+  z-index: 3;
+}
+
+.slide {
+  width: 90%;
+  height: 300px;
+  flex: 1 0 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.testimonial-txt {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%;
+}
+
+.testimonial-heading {
+  font-size: 2rem;
+}
+
+.testimonial-btn {
+  background-color: #21ba4564;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 2em;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.testimonial-btn:active {
+  background-color: #21ba4564;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.6);
+}
+/* ***************** HOME | Testimonial Section | END ***************  Luke */
+
+/* ***************** CONTACT | Form *****************   Luke */
+
+input::placeholder {
+  color: rgb(158, 155, 156) !important;
+}
+
+.ui.button,
+.ui.form .field > label {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.form-heading {
+  color: #21ba45;
   font-size: 1.65rem;
   border-bottom: 1px solid #21ba4564;
 }
@@ -263,123 +589,128 @@ h4.ui.dividing.header {
   justify-content: center;
 }
 
-/* ***************** CONTACT END ***************** */
+/* ***************** CONTACT END *****************   Luke */
 
-/* ***************** FOOTER ***************** */
+/* ***************** FOOTER *****************   Luke */
 
 #footer-wrap {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    background-color: #1f2f44;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #1f2f44;
 }
 
 .footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 100px;
-    flex-direction: column;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px;
+  flex-direction: column;
 }
 
 .footer-content a {
-    color: #fff;
-    font-size: 1.2rem;
-    padding: 10px;
-    font-weight: 200;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: 200;
 }
 
 .footer-content a:hover {
-    color: #21ba45;
-    font-size: 1.2rem;
-    padding: 10px;
+  color: #21ba45;
+  font-size: 1.2rem;
+  padding: 10px;
 }
 
 .footer-content-bottom {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #21ba45;
-    color: #fff;
-    padding: 10px;
-    font-weight: 300;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #21ba45;
+  color: #fff;
+  padding: 10px;
+  font-weight: 300;
 }
 
-/* ***************** FOOTER END ***************** */
+/* ***************** FOOTER END *****************   Luke */
 
-/* ***************** WORK ***************** */
-.work-wrap{
-  width:100%;
-  height:100vh;
+/* ***************** WORK *****************  Kathrine */
+.work-wrap {
+  width: 100%;
+  height: 100vh;
 }
-.work-banner{
+.work-banner {
   background-image: url('/media/Roof_plate.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-.banner-header{
+.banner-header {
   font-size: 40px;
-  color:white;
+  color: white;
   z-index: 2;
 }
-.work-overlay{
+.work-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 500px;
-  position:absolute;
+  position: absolute;
 }
-.gallery-heading{
-  width:100%;
+.gallery-heading {
+  width: 100%;
   font-size: 30px;
   margin: 20px 0;
   text-align: center;
 }
-.work-section{
-  display:flex;
-  padding:0 0;
+.work-section {
+  display: flex;
+  padding: 0 0;
 }
-.work-content{
-  padding:40px 40px;
+.work-content {
+  padding: 40px 40px;
   font-size: 1.6em;
   text-align: left;
 }
-.work-content2{
+.work-content2 {
   background-color: #fafafa;
-  padding:40px 40px;
+  padding: 40px 40px;
   font-size: 1.6em;
   text-align: right;
 }
-.work-heading{
+.work-heading {
   font-size: 25px;
 }
-.work-image{
+.work-image {
   border-radius: 5px;
-  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.6);
-  margin:40px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  margin: 40px;
 }
-.work-image2{
+.work-image2 {
   border-radius: 5px;
-  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.6);
-  margin:40px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  margin: 40px;
   background-color: #fafafa;
 }
-.work-button:hover{
+.work-button:hover {
   background-color: #21ba45ab;
 }
-/* ***************** WORK END ***************** */
+/* ***************** WORK END *****************  Kathrine */
 
 /* ***************** MEDIA QUERIES ***************** */
+
+@media screen and (max-width: 1100px) {
+  .info-text {
+    font-size: 0.8em;
+  }
+}
 
 @media screen and (max-width: 960px) {
   .top-nav .mobile-menu-btn {
@@ -397,6 +728,56 @@ h4.ui.dividing.header {
   .top-nav .menu-top {
     display: none;
   }
+  .info-section {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .info-right {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-content {
+    padding: 0 0 30px 0;
+    text-align: center;
+    margin: 10px;
+    width: 80%;
+  }
+
+  .info-heading {
+    font-size: 1.8rem;
+  }
+
+  .section-heading {
+    width: 60%;
+  }
+
+  .info-image-left {
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin: 40px 0 20px 0;
+    max-height: 300px;
+    width: 80vw;
+  }
+  .info-image-right {
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin: 40px 0 20px 0;
+    max-height: 300px;
+    width: 80vw;
+  }
+
 
   #form-wrap {
     margin-top: 15%;
@@ -423,9 +804,25 @@ h4.ui.dividing.header {
   .banner-btn:hover {
     float: right;
   }
+
+  .footer-content {
+    /* padding: 40px 50px; */
+  }
+
+  .info-text {
+    font-size: 0.8em;
+  }
 }
 
 @media screen and (max-width: 760px) {
+  .quote-heading {
+    font-size: 2em;
+  }
+
+  .services-item {
+    text-align: center;
+  }
+
   #form-wrap {
     margin-top: 20%;
   }
@@ -457,16 +854,59 @@ h4.ui.dividing.header {
     float: right;
     background-color: #018856;
   }
+  .slide p {
+    font-size: 1.5em;
+    margin: 5px;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 608px) {
+  .quote-heading {
+    font-size: 1.5em;
+  }
+
+  .long {
+    font-size: 4.5vw;
+  }
+  .slide h2 {
+    font-size: 1.5em;
+    margin: 5px;
+  }
+  .slide p {
+    font-size: 1.2em;
+    margin: 5px;
+  }
+
+  .testimonial-btn {
+    font-size: 1.8em;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  .testimonial-btn:active {
+    background-color: #21ba4564;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.6);
+  }
+
   #form-wrap {
     margin-top: 30%;
   }
+
+  .services-content-2 {
+    display: none;
+  }
+
   .card {
     width: 90%;
     text-align: center;
   }
+
   .card-heading {
     border-bottom: #94949480 1px solid;
     width: fit-content;
@@ -476,31 +916,76 @@ h4.ui.dividing.header {
   .card-content {
     font-size: 1.4em;
   }
+
   #recycle-banner h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #fff;
+  }
+
+  .footer-content {
+    padding: 40px 20px;
+  }
+
+  .footer-content a {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px;
+    font-weight: 200;
+  }
+
+  .footer-content a:hover {
+    color: #21ba45;
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #quote-btn {
+    padding: 10px 30px;
   }
 
   .footer-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 100px;
+    padding: 0 100px 40px 100px;
     flex-direction: column;
-    
-}
+  }
 
-.footer-content a {
+  #footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+    flex-direction: column;
+  }
+  .testimonial-btn {
+    font-size: 1.4rem;
+    border: 1px solid #fff;
+    padding: 10px 3035x;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  .testimonial-btn:active {
+    background-color: #21ba4564;
     color: #fff;
+    border-radius: 50px;
     font-size: 1.2rem;
-    padding: 5px;
-    font-weight: 200;
-}
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.6);
+  }
 
-.footer-content a:hover {
-    color: #21ba45;
-    font-size: 1.2rem;
-    padding: 5px;
-}
-  
+  .info-section {
+    padding: 10px 0 20px 0;
+  }
+  .info-img {
+    margin-top: 10px;
+  }
+
+  .services-content-1,
+  .services-content-2 {
+    flex-wrap: wrap;
+  }
 }
