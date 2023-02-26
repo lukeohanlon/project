@@ -18,11 +18,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Document</title>
+    <title>Swift Home Maintenace</title>
     <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
@@ -52,117 +55,95 @@
           <i class="bars icon"></i>
         </button>
       </div>
+      <div class="contact-banner">
+        <div class="contact-overlay"></div>
+        <h2 class="banner-header">Contact Us</h2>
+      </div>
       <div class="form-container">
-        <div id="form-wrap">
-          <form class="ui form">
-            <h4 class="form-heading">Get In Touch</h4>
-            <div class="field">
-              <label>Name</label>
-              <div class="two fields">
-                <div class="field">
-                  <input
-                    type="text"
-                    name="[first-name]"
-                    placeholder="First Name"
-                    required
-                  />
+        <div class="contact">
+          <!-- INFO -->
+          <div class="contact-container">
+            <div class="form">
+              <div class="contact-info">
+                <h3 class="title">Our Location</h3>
+                <div class="info">
+                  <div class="information-contact">
+                    <i class="map marker alternate contact-icons icon"></i>
+                    <p>&nbsp; 92 Kildare Street, Ireland, R14XC92</p>
+                  </div>
+                  <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.683075991895!2d-6.245181484459618!3d53.348929179979606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational%20College%20of%20Ireland!5e0!3m2!1sen!2sie!4v1677332036600!5m2!1sen!2sie" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="field">
-                  <input
-                    type="text"
-                    name="[last-name]"
-                    placeholder="Last Name"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="field">
-              <label>Address</label>
-              <div class="fields">
-                <div class="twelve wide field">
-                  <input
-                    type="text"
-                    name="[address]"
-                    placeholder="Street Address"
-                  />
-                </div>
-                <div class="four wide field">
-                  <input type="text" name="[address-2]" placeholder="Apt #" />
-                </div>
-              </div>
-            </div>
-            <div class="field">
-              <div class="two fields">
-                <div class="field">
-                  <input type="text" name="[address-3]" placeholder="City" />
-                </div>
-                <div class="field">
-                  <input type="text" name="[address-4]" placeholder="County" />
-                </div>
-              </div>
-            </div>
-            <div class="field">
-              <div class="two fields">
-                <div class="twelve wide field">
-                  <input type="text" name="[address-5]" placeholder="Country" />
-                </div>
-                <div class="field">
-                  <input
-                    type="text"
-                    name="[address-6]"
-                    placeholder="Postcode"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="wide field">
-              <div class="field">
-                <label>Service</label>
-                <select class="ui fluid dropdown">
-                  <option value="">Service</option>
-                  <option value="LS">Landscaping</option>
-                  <option value="RC">Roof Cleaning</option>
-                  <option value="DC">Driveway Cleaning</option>
-                  <option value="GC">Gutter Cleaning</option>
-                  <option value="RG">Rolled Grass</option>
-                  <option value="TS">Tree Surgeon</option>
-                  <option value="0">Other</option>
-                </select>
-              </div>
-            </div>
 
-            <div class="field">
-              <label>Message</label>
-              <textarea></textarea>
+                <div class="contact-icons-wrap">
+                  <p>Connect with us:</p>
+                  <div class="contact-icons">
+                    <a href="https://facebook.com">
+                      <i class="facebook icon contact-icon"></i>
+                    </a>
+                    <a href="https://wa.me/+353871234567">
+                      <i class="whatsapp icon contact-icon"></i>
+                    </a>
+                    <a href="mailto:info@swifthome.com">
+                      <i class="envelope icon contact-icon"></i>
+                    </a>
+                    <a href="tel:087-123-4567">
+                      <i class="phone icon contact-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form">
+                <form action="" id="f" autocomplete="off">
+                  <h3 class="title">Contact us</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="input" placeholder="Name" />
+                    <span>Username</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="email" name="email" class="input"  placeholder="Email"  />
+                    <span>Email</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="tel" name="phone" class="input"  placeholder="Phone"  />
+                    <span>Phone</span>
+                  </div>
+                  <div class="input-container textarea">
+                    <textarea name="message" class="input"  placeholder="Message" ></textarea>
+                    <span>Message</span>
+                  </div>
+                  <input  type="submit" value="Send" onclick="sendSuccess()" class="form-btn" />
+                </form>
+              </div>
             </div>
-            <div class="ui button green" tabindex="0">Submit Query</div>
-          </form>
+          </div>
+          <!-- FORM -->
         </div>
       </div>
       <div id="footer-wrap">
         <div class="footer-content">
-            <h3 class="footer-heading">Menu</h3>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="work.html">Work</a>
-            <a href="services.html">Services</a>
+          <h3 class="footer-heading">Menu</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
         </div>
         <div class="footer-content">
-            <h3 class="footer-heading">Services</h3>
-            <a href="">Landscaping</a>
-            <a href="">Cleaning</a>
-            <a href="">Trimming</a>
-            <a href="">Roof Repairs</a>
+          <h3 class="footer-heading">Services</h3>
+          <a href="">Landscaping</a>
+          <a href="">Cleaning</a>
+          <a href="">Trimming</a>
+          <a href="">Roof Repairs</a>
         </div>
         <div class="footer-content">
-            <h3 class="footer-heading">Contact</h3>
-            <a href=""><i class="phone icon"></i> Phone</a>
-            <a href=""><i class="envelope icon"></i> Email</a>
-            <a href=""><i class="facebook icon"></i> Facebook</a>
-            <a href=""><i class="globe icon"></i> Website</a>
+          <h3 class="footer-heading">Contact</h3>
+          <a href=""><i class="phone icon"></i> Phone</a>
+          <a href=""><i class="envelope icon"></i> Email</a>
+          <a href=""><i class="facebook icon"></i> Facebook</a>
+          <a href="https://wa.me/+353871234567"><i class="whatsapp icon"></i> WhatsApp</a>
         </div>
         <div class="footer-content-bottom">GroupF © | 2023</div>
       </div>
     </div>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>
