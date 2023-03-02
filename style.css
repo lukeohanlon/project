@@ -566,11 +566,27 @@ button {
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  background-color: #ececec;
+  background-image: url('./media/swift\ banner.jpeg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+}
+
+.contact-head{
+  margin-top: 2em;
+}
+
+.contact-container-overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 
 }
 
@@ -1127,6 +1143,11 @@ padding: 20px;
   .contact-container{
     padding: 5em;
   }
+  .contact-overlay {
+  
+    padding: 5em;
+
+  }
 
   .form {
     grid-template-columns: 1fr;
@@ -1203,6 +1224,10 @@ padding: 20px;
 @media screen and (max-width: 608px) {
 
   .contact-container{
+    padding: 3em;
+  }
+
+  .contact-container-overlay {
     padding: 3em;
   }
 
@@ -1289,6 +1314,10 @@ padding: 20px;
 @media (max-width: 480px) {
   .contact-container {
     padding: .5rem;
+  }
+
+  .contact-container-overlay {
+    padding: .4rem;
   }
 
   form,
