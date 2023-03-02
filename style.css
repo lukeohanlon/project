@@ -883,7 +883,7 @@ input:active {
   height:100vh;
 }
 .about-banner{
-  background-image: url(/.media/Tool\ Belt.jpg);
+  background-image: url("/.media/Tool\ Belt.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -905,7 +905,7 @@ input:active {
   z-index: 2;
 }
 .work-history{
-  background-image: url(/.media/work-landscaping.jpg);
+  background-image: url("/.media/work-landscaping.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
