@@ -108,6 +108,13 @@ button {
   font-size: 1.4em;
 }
 
+.active {
+  font-size: 1.4em;
+  border-bottom: 1px solid #21ba45;
+  border-radius: 0px !important;
+  
+}
+
 .top-nav .mobile-menu-btn {
   display: none;
   color: #fff;
