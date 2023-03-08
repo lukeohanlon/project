@@ -1428,3 +1428,140 @@ padding: 20px;
     flex-wrap: wrap;
   }
 }
+
+
+/* ************ SERVICES ************** */
+
+#services-main {
+	position: relative;
+	padding-top: 100px;
+	padding-left: 100px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	/*background-color: rgba(0,0 ,0 , 0.63);
+	background-image: url('media/cleaning-staff.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	
+}
+/*.services-main::before {    
+      content: "";
+      background-image: url('media/cleaning-staff.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.2;
+}*/
+.container{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	margin: 20px;
+}
+
+
+.service-img{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border:solid 5px #1f2f44;
+	
+}
+.service-name a{
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+	text-shadow: -2px 0 #1f2f44, 0 2px #1f2f44, 2px 0 #1f2f44, 0 -2px #1f2f44;
+	text-decoration: none;
+}
+.service-name a:hover{
+	font-size:25px;
+	text-decoration: underline;
+}
+
+.text{
+	
+	display: none;
+	top: 0;
+	width: 320px;
+	height: 320px;
+	border: solid #1f2f44;
+	/*border-radius: 50%;
+	position: absolute;*/
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	font-weight: 500;
+	flex-wrap: wrap;
+	padding: 10px;
+	
+}
+.service-img:hover{
+	display:none;
+}
+
+.service-img:hover + .text{
+	display: flex; 
+}
+
+.info,#other{
+	display: block;
+	font-weight: 500;
+	margin:40px 100px;
+	
+}
+.info div{
+	padding-top: 30px;
+	
+}
+
+.accordion-button:hover, .accordion-button:focus {
+	border: solid #1f2f44; 
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+	
+}
+
+.accordion-button {
+	border: solid #1f2f44; 	
+}
+.accordion-button:not(.collapsed) {
+	background: none;
+	color: #1f2f44;
+}
+
+@media screen and (max-width: 500px){
+	#services-main{
+		grid-template-columns: auto;
+	}
+}
+
+
+/* ***************** Testimonials **************** */
+
+#test {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.rew{
+	color: black;
+	font-weight:500;
+	padding: 0 140px 50px 50px;
+	margin: 20px;
+	/*background-image: url("media/callup2.png");
+	background-size: 1600px 200px;
+	background-position: center;
+	background-repeat: no-repeat;*/
+}
