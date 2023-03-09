@@ -1472,6 +1472,7 @@ padding: 20px;
 	height: 300px;
 	border-radius: 50%;
 	border:solid 5px #1f2f44;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 	
 }
 .service-name a{
@@ -1497,20 +1498,21 @@ padding: 20px;
 	width: 320px;
 	height: 320px;
 	border: solid #1f2f44;
-	/*border-radius: 50%;
-	position: absolute;*/
-	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 10%;
+	position: absolute;
+	background-color: #21ba45;
 	color: white;
-	font-weight: 500;
+	font-weight: 300;
 	flex-wrap: wrap;
 	padding: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 	
 }
-.service-img:hover{
+.container:hover .service-img{
 	display:none;
 }
 
-.service-img:hover + .text{
+.container:hover .text{
 	display: flex; 
 }
 
@@ -1559,7 +1561,7 @@ padding: 20px;
 
 .rew{
 	color: black;
-	font-weight:500;
+	font-weight:300;
 	padding: 0 140px 50px 50px;
 	margin: 20px;
 	/*background-image: url("media/callup2.png");
