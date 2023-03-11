@@ -895,7 +895,6 @@ input:active {
 }
 
 /* ***************** FOOTER END *****************   Luke */
-/* ***************** ABOUT ***************** Katherine */
 
 /* ***************** ABOUT ***************** Katherine */
 
@@ -1613,8 +1612,6 @@ padding: 20px;
 	background-repeat: no-repeat;
 	background-size: cover;	
 }
-  
-
 
 /*.testground
 {
@@ -1642,4 +1639,6 @@ padding: 20px;
 	margin: 50px 0;
 	
 }
+p{
+	padding-top: 20px;
 }
