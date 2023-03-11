@@ -443,6 +443,9 @@ button {
   overflow: hidden;
   height: 300px;
   background-image: url('./media/swift\ banner.jpeg');
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .slider-overlay {
@@ -846,7 +849,7 @@ input:active {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 300px;
+  /* height: 300px; */
   justify-content: center;
   color: #fff;
   background-color: #1f2f44;
@@ -890,139 +893,7 @@ input:active {
 
 /* ***************** FOOTER END *****************   Luke */
 
-/* ***************** TEST ***************** Luke */
 
-.test-container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 2rem;
-  background-image: url('./media/test-banner.jpeg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.test-head{
-  margin-top: 2em;
-}
-
-.test-container-overlay {
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.test-wrap {
-width: 100%;
-background-image: url('/media/test-banner.jpeg');
-background-position: top;
-background-repeat: no-repeat;
-background-size: cover;
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-color: #fff;
-height: 100%;
-min-height: 100vh;
-}
-.testimonials {
-margin-top: 100px;
-width: 100%;
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-color: #fff;
-height: 100%;
-min-height: 100vh;
-z-index: 10;
-}
-
-.test-containter{
-position: relative;
-width: 100%;
-min-height: 100vh;
-padding: 2rem;
-background-image: url('./media/swift\ banner.jpeg');
-background-position: bottom;
-background-repeat: no-repeat;
-background-size: cover;
-overflow: hidden;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-.test-head h2 {
-font-size: 4em;
-border-bottom: 1px solid #21ba45 ;
-}
-.test-over {
-width: 100%;
-position: absolute;
-background-color: rgba(0, 0, 0, 0.8);
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-color: #fff;
-height: 100%;
-min-height: 100vh;
-}
-.test-info-wrap {
-  width: 100%;
-}
-
-.test-section-heading-wrap {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.test-info-section {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 0;
-}
-.test-info-content {
-  padding: 40px 40px;
-  font-size: 1.6em;
-  
-}
-.test-info-text {
-  text-align: center;
-}
-.test-info-heading {
-  font-size: 2.4rem;
-  text-align: center;
-}
-.test-info-content-right, .test-info-content{
-  text-align: center;
-}
-
-.test-info-image-left {
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-  margin: 40px 40px 0  40px;
-  height: 500px;
-  width: 80%;
-  object-position: right;
-  object-fit: cover;
-}
-/* ***************** TEST END ***************** Luke */
 
 /* ***************** ABOUT ***************** Katherine */
 
@@ -1287,7 +1158,7 @@ padding: 20px;
   }
 
   .footer-content {
-    /* padding: 40px 50px; */
+    padding: 40px 50px;
   }
 
   .info-text {
@@ -1453,6 +1324,12 @@ padding: 20px;
     color: #fff;
   }
 
+  .footer-wrap {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
   .footer-content {
     padding: 40px 20px;
   }
@@ -1460,14 +1337,13 @@ padding: 20px;
   .footer-content a {
     color: #fff;
     font-size: 1.2rem;
-    padding: 5px;
-    font-weight: 200;
+    /* padding: 5px; */
   }
 
   .footer-content a:hover {
     color: #21ba45;
     font-size: 1.2rem;
-    padding: 5px;
+
   }
 }
 
@@ -1515,6 +1391,15 @@ padding: 20px;
   .form-btn {
     padding: 0.45rem 1.2rem;
   }
+  #footer-wrap {
+    display: flex;
+   
+    flex-direction: column;
+  }
+  .footer-content {
+    padding: 10px 0;
+    font-weight: 400;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1522,21 +1407,9 @@ padding: 20px;
     padding: 10px 30px;
   }
 
-  .footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 100px 40px 100px;
-    flex-direction: column;
-  }
+  
 
-  #footer-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 0 0 0;
-    flex-direction: column;
-  }
+
   .testimonial-btn {
     font-size: 1.4rem;
     border: 1px solid #fff;
