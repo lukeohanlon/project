@@ -311,9 +311,9 @@ button {
 }
 
 .info-heading {
-  font-size:1.5em;
-  color:#21ba45;
-  font-weight: 400;;
+  font-size: 1.5em;
+  color: #21ba45;
+  font-weight: 300;
 }
 
 .info-image-left {
@@ -784,6 +784,19 @@ input:active {
   font-weight: 200;
 }
 
+.info {
+  /* width: 50vw !important; */
+  margin: 0px !important;
+}
+
+p:last-child {
+  margin-bottom: 0px !important;
+}
+
+.info div {
+  padding: 0 !important;
+}
+
 .google-map {
   width: 50vw;
   max-width: 350px;
@@ -859,11 +872,13 @@ input:active {
 
 .footer-heading {
   border-bottom:#21ba45 1px solid;
+  font-weight: 400;
 }
 
 .footer-content {
   display: flex;
   align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 40px 100px;
   flex-direction: column;
@@ -891,7 +906,15 @@ input:active {
   background-color: #21ba45;
   color: #fff;
   padding: 10px;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+.foot-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 /* ***************** FOOTER END *****************   Luke */
@@ -1117,6 +1140,8 @@ padding: 20px;
 
   .info-heading {
     font-size: 1.8rem;
+    font-weight: 300;
+    /* text-shadow:  2px 2px 3px rgba(0, 0, 0, 0.4); */
   }
 
   .section-heading {
@@ -1260,6 +1285,18 @@ padding: 20px;
 }
 
 @media screen and (max-width: 608px) {
+  .info {
+    width: 80vw !important;
+    margin: 10px !important;
+  }
+
+  p:last-child {
+    margin-bottom: 15px !important;
+}
+
+  .info div {
+    padding: 0 !important;
+  }
 
   .contact-container{
     padding: 3em;
@@ -1270,7 +1307,7 @@ padding: 20px;
   }
 
   .quote-heading {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .long {
@@ -1398,14 +1435,25 @@ padding: 20px;
   .form-btn {
     padding: 0.45rem 1.2rem;
   }
+
   #footer-wrap {
     display: flex;
-   
-    flex-direction: column;
+   justify-content: space-around;
+    /* flex-direction: column; */
   }
-  .footer-content {
-    padding: 10px 0;
+ 
+  .mobile-hide {
+    display: none;
+  }
+
+  .footer-content  {
+    padding: 40px 20px;
     font-weight: 400;
+    align-items: flex-start;
+  }
+
+  .icon-align-left a {
+    text-align: left !important;
   }
 }
 
@@ -1413,9 +1461,6 @@ padding: 20px;
   #quote-btn {
     padding: 10px 30px;
   }
-
-  
-
 
   .testimonial-btn {
     font-size: 1.4rem;
@@ -1437,6 +1482,7 @@ padding: 20px;
   .info-section {
     padding: 10px 0 20px 0;
   }
+
   .info-img {
     margin-top: 10px;
   }
@@ -1623,7 +1669,4 @@ padding: 20px;
 	background-color: rgba(0, 0, 0, 0.6);
 	margin: 50px 0;
 	
-}
-p{
-	padding-top: 20px;
 }
