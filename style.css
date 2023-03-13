@@ -919,6 +919,7 @@ input:active {
   font-size: 60px;
   color:white;
   z-index: 2;
+  border-bottom: #94949480 1px solid;
 }
 .work-history{
   background-image: url(./media/work-landscaping.jpg);
@@ -926,6 +927,7 @@ input:active {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  min-height: 700px;
   width:96%;
   display:flex;
   align-items: flex-start;
@@ -944,7 +946,7 @@ input:active {
   font-weight:300;
 }
 .text-block p{
-  font-size:20px;
+  font-size:18px;
 }
 .text-block ul{
   font-size:1.4em;
@@ -983,12 +985,14 @@ input:active {
   font-size: 60px;
   color:white;
   z-index: 2;
+  border-bottom: #94949480 1px solid;
 }
 .gallery-heading{
   width:100%;
   font-size: 30px;
   margin: 20px 0;
   text-align: center;
+
 }
 .work-section{
   display:flex;
@@ -1164,7 +1168,10 @@ padding: 20px;
   .info-text {
     font-size: 0.8em;
   }
-  
+  .reverse{
+    display:flex;
+    flex-direction: column !important;
+  }
 
 @media (max-width: 850px) {
 
