@@ -1308,6 +1308,7 @@ padding: 20px;
     border-bottom: #94949480 1px solid;
     width: fit-content;
     font-size: 2.2em;
+    text-align: center;
   }
 
   .card-content {
@@ -1646,7 +1647,6 @@ padding: 20px;
  
 
 }
-
 
 /* .info,#other{
 	display: block;
