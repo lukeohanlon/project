@@ -40,3 +40,23 @@ function sendSuccess() {
     alert("Adding Succesful!");
   }
 }
+
+function circleChange() {
+  let cont = document.getElementById('container1')
+  let shower = document.getElementById('shower')
+  let hider = document.getElementById('hider')
+  let text1 = document.getElementById('text1')
+  // let text1 = document.getElementById('text1')
+  let form = document.getElementById('form')
+  let box = document.getElementById('success-box')
+  let icon = document.getElementById('icon')
+  // if (form.checkValidity()) {
+    // document.getElementById('user-name').innerHTML = name
+    // document.getElementById('user-email').innerHTML = email
+    shower.style.opacity = '0'
+    hider.style.opacity = '1'
+    text1.style.opacity='1'
+    cont.style.borderRadius='10px'
+   
+  // }
+}
