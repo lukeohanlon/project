@@ -1330,10 +1330,10 @@ padding: 20px;
 }
 
 @media screen and (max-width: 608px) {
-  .info {
+  /* .info {
     width: 80vw !important;
     margin: 10px !important;
-  }
+  } */
 
   p:last-child {
     margin-bottom: 15px !important;
@@ -1648,16 +1648,16 @@ padding: 20px;
 }
 
 
-.info,#other{
+/* .info,#other{
 	display: block;
 	font-weight: 500;
 	margin:40px 100px;
 	
-}
-.info div{
+} */
+/* .info div{
 	padding-top: 30px;
 	
-}
+} */
 
 .accordion-button:hover, .accordion-button:focus {
 	border: solid #1f2f44; 
