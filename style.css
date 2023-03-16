@@ -1542,7 +1542,6 @@ padding: 20px;
 
 
 /* ************ SERVICES ************** */
-
 #services-main {
 	position: relative;
 	padding-top: 120px;
@@ -1550,7 +1549,6 @@ padding: 20px;
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto auto auto;
-
 	
 }
 
@@ -1560,12 +1558,7 @@ padding: 20px;
 	position: relative;
 	margin: 20px;
 
-
 }
-
-
-}
-
 
 .service-img{
 	width: 300px;
@@ -1576,7 +1569,6 @@ padding: 20px;
 	object-fit: cover;
 	transition: all 0.3s ease-in-out;
 }
-
 .service-name a{
 	left:35%;
 	position: absolute;
@@ -1584,44 +1576,8 @@ padding: 20px;
 	text-align: center;
 	font-size: 18px;
 	font-weight: 700;
-
-.service-name a {
-	width: 100%;
-  
-	/* position: absolute; */
-	/* bottom: 30px; */
-	text-align: center;
-	font-size:2em;
-	font-weight: 400;
 	color: white;
-  z-index: 3;
-	/* text-shadow: -2px 0 #1f2f44, 0 2px #1f2f44, 2px 0 #1f2f44, 0 -2px #1f2f44; */
-	text-decoration: none;
-}
-.service-name-title {
-	width: 100%;
-  display: none;
-	/* position: absolute; */
-	/* bottom: 30px; */
-	text-align: center;
-	font-size:2em;
-	font-weight: 400;
-	color: white;
-  z-index: 3;
-	/* text-shadow: -2px 0 #1f2f44, 0 2px #1f2f44, 2px 0 #1f2f44, 0 -2px #1f2f44; */
-	text-decoration: none;
-}
-
-.service-name {
-	width: 100%;
-	/* position: absolute; */
-	/* bottom: 30px; */
-	text-align: center;
-	font-size:2em;
-	font-weight: 400;
-	color: white;
-  z-index: 3;
-	/* text-shadow: -2px 0 #1f2f44, 0 2px #1f2f44, 2px 0 #1f2f44, 0 -2px #1f2f44; */
+	text-shadow: -2px 0 #1f2f44, 0 2px #1f2f44, 2px 0 #1f2f44, 0 -2px #1f2f44;
 	text-decoration: none;
 }
 .service-name a:hover{
@@ -1658,9 +1614,7 @@ padding: 20px;
  
 }
 .container:hover .text{
-
 	display: flex;
-
 	opacity: 1;	
 	
 }
@@ -1672,24 +1626,16 @@ padding: 20px;
 }
 
 
-}
-
-/* .info,#other{
+.info,#other{
 	display: block;
 	font-weight: 300;
 	margin:40px 100px;
-
 	font-size: 1.6em;
 }
 .info div{
-
-	
-} */
-/* .info div{
-
 	padding-top: 30px;
 	
-} */
+}
 
 .accordion-button:hover, .accordion-button:focus {
 	border: solid #1f2f44; 
@@ -1753,11 +1699,9 @@ padding: 20px;
 	padding: 20px;
 	
 }
-
 .name{
 	padding-top: 20px;
 }
 .checked {
 	color:#21ba45;
 }
-
