@@ -1540,6 +1540,7 @@ padding: 20px;
 
 }
 
+/* ************ SERVICES ************** */
 
 #services-main {
 	position: relative;
@@ -1649,18 +1650,18 @@ padding: 20px;
 .ot{
 	text-align: center;
 }
-.info,#other{
+.info-ser,#other{
 	display: block;
 	font-weight: 300;
 	margin:40px 100px;
 	font-size: 1.6em;
 	padding-bottom: 20px;
 }
-.info div{
+.info-ser div{
 	padding-top: 30px;
 	
 }
-.info span {
+.info-ser span {
 	color:#21ba45;
 }
 .accordion-button {
@@ -1736,7 +1737,7 @@ padding: 20px;
 		padding-left: 10px;
 		padding-right:10px;
 	}
-	.info,#other, #contact-ser {
+	.info-ser,#other, #contact-ser {
 		margin:10px 10px;
 		
 	}
@@ -1767,7 +1768,7 @@ padding: 20px;
 		padding-left: 50px;
 		padding-right:50px;
 	}
-	.info,#other, #contact-ser {
+	.info-ser,#other, #contact-ser {
 		margin:10px 10px;
 		
 	}
