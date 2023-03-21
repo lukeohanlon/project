@@ -1541,15 +1541,36 @@ padding: 20px;
 }
 
 
-/* ************ SERVICES ************** */
 #services-main {
 	position: relative;
-	padding-top: 120px;
 	padding-left: 100px;
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	
+}
+.ser-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+.ser-banner {
+    background-image: url('media/box-hedge.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.ser-header {
+    font-size: 60px;
+    height: 50%;
+    color: white;
+    z-index: 2;
 }
 
 .container{
@@ -1570,11 +1591,11 @@ padding: 20px;
 	transition: all 0.3s ease-in-out;
 }
 .service-name a{
-	left:35%;
 	position: absolute;
+	left:30%;
 	top:45%;	
 	text-align: center;
-	font-size: 18px;
+	font-size: 1.6em;
 	font-weight: 700;
 	color: white;
 	text-shadow: -2px 0 #1f2f44, 0 2px #1f2f44, 2px 0 #1f2f44, 0 -2px #1f2f44;
@@ -1601,10 +1622,10 @@ padding: 20px;
 	padding: 10px;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 	text-shadow: 2px 2px 4px #000000;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	text-align: center;
 	padding-top:50px;
-	transition: all 2s ease-in-out;
+	transition: all 3s ease-in-out;
 }
 
 .container:hover .service-img{
@@ -1625,18 +1646,27 @@ padding: 20px;
 
 }
 
-
+.ot{
+	text-align: center;
+}
 .info,#other{
 	display: block;
 	font-weight: 300;
 	margin:40px 100px;
 	font-size: 1.6em;
+	padding-bottom: 20px;
 }
 .info div{
 	padding-top: 30px;
 	
 }
-
+.info span {
+	color:#21ba45;
+}
+.accordion-button {
+	font-size: 18px;
+	
+}
 .accordion-button:hover, .accordion-button:focus {
 	border: solid #1f2f44; 
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
@@ -1650,23 +1680,117 @@ padding: 20px;
 	background: none;
 	color: #1f2f44;
 }
-
+#contact-ser {
+	background-color: #21ba45;
+	font-size: 1.6em;
+	font-weight: 400;
+	color: white;
+	width: 40%;
+	border: solid #1f2f44; 	
+	border-radius: 50px;
+	text-align: center;
+	line-height: 200%;
+	margin: 0 30% 50px 30%;
+	padding: 10px;
+	
+}
+#contact-ser button{
+	border: none;
+	background-color: #21ba45;
+	font-size: 1.6em;
+	font-weight: 400;
+	color: white;
+}
+#contact-ser button:hover{
+	font-size: 1.8em;
+	border-bottom: 2px solid white;
+}
+.cont-ser {
+	position: relative;
+	width: 100%;
+}
+#f-ser{
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 1.6em;
+	font-weight: 400;
+	left: 35%;
+	visibility: hidden;
+	
+}
+#f-ser input{
+	width: 400px;
+}
+#cb{
+	position: absolute;
+	top:0;
+	font-size: 1.6em;
+	font-weight: 400;
+	visibility: hidden;
+	
+}
 @media screen and (max-width: 500px){
 	#services-main{
 		grid-template-columns: auto;
 		padding-left: 10px;
 		padding-right:10px;
 	}
-	.info,#other{
+	.info,#other, #contact-ser {
 		margin:10px 10px;
+		
+	}
+	
+	#other, #contact-ser {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	#contact-ser{
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 90%;
+	}
+	#f-ser{
+		left: 5%;
+	}
+	
+}
+@media screen and (max-width: 700px){
+	#services-main{
+		grid-template-columns: auto auto;
+		padding-left: 10px;
+		padding-right:10px;
 	}
 }
-
+@media screen and (max-width: 1000px){
+	#services-main{
+		padding-left: 50px;
+		padding-right:50px;
+	}
+	.info,#other, #contact-ser {
+		margin:10px 10px;
+		
+	}
+	
+	#other, #contact-ser {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	#contact-ser{
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 90%;
+	}
+	#f-ser{
+		left: 5%;
+	}
+	
+	
+}
 
 /* ***************** Testimonials **************** */
 
 #test {
-	padding-top: 90px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -1678,6 +1802,29 @@ padding: 20px;
 	background-size: cover;	
 }
 
+.test-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+.test-banner {
+    background-image: url('media/client-testimonial.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.test-header {
+    font-size: 60px;
+    height: 50%;
+    color: white;
+    z-index: 2;
+}
 
 .rew{
 	display: flex;
@@ -1687,15 +1834,15 @@ padding: 20px;
 	width: 90%;
     color: #fff;
     z-index: 2;
-	font-weight:300;
-	font-size: 16px;	
+	font-weight:200;
+	font-size: 1.6em;	
 	line-height: 200%;
 	text-align: center;
 	font-weight: 400;
 	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 10px;
 	box-shadow:2px 2px 5px rgba(0, 0, 0, 0.6);
-	margin: 50px 0;
+	margin: 60px 0;
 	padding: 20px;
 	
 }
