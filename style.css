@@ -1648,11 +1648,12 @@ padding: 20px;
 
 }
 
-.info-ser,#other{
+.info-ser{
 	display: block;
 	font-weight: 300;
 	margin:40px 100px;
 	font-size: 1.6em;
+  line-height: 1.5em;
 	padding-bottom: 20px;
 }
 .info-ser div{
@@ -1665,11 +1666,12 @@ padding: 20px;
 
 
 @media screen and (max-width: 500px){
-	#services-main{
-		grid-template-columns: auto;
-		padding-left: 10px;
-		padding-right:10px;
+	.info-ser{
+		
+    margin-left: 30px;
+    margin-right: 30px;
 	}
+
   
 }
 	
