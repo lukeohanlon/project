@@ -1644,6 +1644,7 @@ padding: 20px;
 	color:#21ba45;
 	top: 10px;
 	border-bottom: 2px solid #21ba45;
+  font-size: 1.6em;
 
 }
 
@@ -1687,6 +1688,15 @@ padding: 20px;
 		grid-template-columns: auto;
 		padding-left: 10px;
 		padding-right:10px;
+	}
+  #other {
+		margin:10px 10px;
+		
+	}
+	
+	#other {
+	padding-left: 5px;
+	padding-right: 5px;
 	}
 		
 	}

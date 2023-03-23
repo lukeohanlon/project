@@ -65,11 +65,3 @@ function circleChange() {
 /* ******** Anna********* */
 
 
-function alter(){
-	document.getElementById('contact-ser').style.visibility='hidden';
-	document.getElementById('f-ser').style.visibility='visible';
-}
-function alter2(){
-	document.getElementById('f-ser').style.visibility='hidden';
-	document.getElementById('cb').style.visibility='visible';
-}
