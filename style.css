@@ -1648,9 +1648,6 @@ padding: 20px;
 
 }
 
-.ot{
-	text-align: center;
-}
 .info-ser,#other{
 	display: block;
 	font-weight: 300;
@@ -1665,23 +1662,7 @@ padding: 20px;
 .info-ser span {
 	color:#21ba45;
 }
-.accordion-button {
-	font-size: 18px;
-	
-}
-.accordion-button:hover, .accordion-button:focus {
-	border: solid #1f2f44; 
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-	
-}
 
-.accordion-button {
-	border: solid #1f2f44; 	
-}
-.accordion-button:not(.collapsed) {
-	background: none;
-	color: #1f2f44;
-}
 
 @media screen and (max-width: 500px){
 	#services-main{
@@ -1689,18 +1670,8 @@ padding: 20px;
 		padding-left: 10px;
 		padding-right:10px;
 	}
-  #other {
-		margin:10px 10px;
-		
-	}
-	
-	#other {
-	padding-left: 5px;
-	padding-right: 5px;
-	}
-		
-	}
-	
+  
+}
 	
 
 /* ***************** Testimonials **************** */
