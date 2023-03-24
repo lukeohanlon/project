@@ -1543,6 +1543,7 @@ padding: 20px;
 /* ************ SERVICES ************** */
 
 #services-main {
+
 	position: relative;
 	width: 100%;
 	display: flex;
@@ -1586,10 +1587,10 @@ padding: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 .ser-header {
-    font-size: 60px;
-    height: 50%;
-    color: white;
-    z-index: 2;
+  font-size: 60px;
+  height: 50%;
+  color: white;
+  z-index: 2;
 }
 
 .container{
@@ -1671,12 +1672,19 @@ padding: 20px;
   line-height: 1.5em;
 	padding-bottom: 20px;
 }
-.info-ser div{
-	padding-top: 30px;
-	
+.info-ser div {
+  padding-top: 30px;
 }
 .info-ser span {
 	color:#21ba45;
+}
+.accordion-button {
+  font-size: 18px;
+}
+.accordion-button:hover,
+.accordion-button:focus {
+  border: solid #1f2f44;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -1687,23 +1695,33 @@ padding: 20px;
     margin-right: 30px;
 	}
 
-  
+  #other,
+  #contact-ser {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #contact-ser {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 90%;
+  }
+  #f-ser {
+    left: 5%;
+  }
 }
-	
 
 /* ***************** Testimonials **************** */
 
 #test {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	background-image:url('media/swift banner.jpeg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;	
-  padding-top: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('media/swift banner.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .test-overlay {
@@ -1713,12 +1731,15 @@ padding: 20px;
     position: absolute;
 }
 .test-banner {
-    height: 400px;
-    width: 100%;
-    position: absolute;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  background-image: url('media/client-testimonial.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 .test-header {
   position: absolute;
@@ -1750,8 +1771,8 @@ padding: 20px;
 	padding: 20px;
 	
 }
-.name{
-	padding-top: 20px;
+.name {
+  padding-top: 20px;
 }
 .checked {
 	color:#21ba45;
