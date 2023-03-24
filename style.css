@@ -1552,6 +1552,20 @@ padding: 20px;
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {--bs-gutter-x: 0rem !important;} 
 
+#btn{
+  display: none;
+  position: fixed;
+  bottom: 320px;
+  width: 10%;
+  height: 30px;
+  right: 30px;
+  z-index: 3;
+  background-color: #21ba45;
+  color:white;
+  font-size: 1.6em;
+  border-radius: 20px;
+  border:none;  
+}
 
 
 .ser-overlay {
@@ -1620,6 +1634,7 @@ padding: 20px;
 	color: white;
 	font-weight: 300;
 	font-size: 1.3em;
+  line-height: 1.5em;
 	flex-wrap: wrap;
 	padding: 10px;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
