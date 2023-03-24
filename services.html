@@ -23,9 +23,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" type="text/css" href="style.css" />
 	<title>Swift | Services</title>
 
@@ -68,11 +65,12 @@
 		
 	  <div class="ser-banner">
 		<div class="ser-overlay"></div>
-		<h2 class="ser-header">Our services</h2>
+		<h2 class="ser-header">Our Services</h2>
 		</div>
 			  <div id="services-main"> 
+				<button onclick="btnTop()" id="btn" title="Go to top">To The Top</button>
 				  <div class="container">
-					  <img class="service-img" src="media/landscapingN.jpg">
+					  <img class="service-img" src="media/landscaping_services.jpg" alt="Landscape">
 					  <div class="text">
 					  Garden landscaping is the ideal way to craft an attractive space to grow plants that give you a beautiful environment and design a practical layout that allows you to use your garden how you want. 
 					  </div>
@@ -80,7 +78,7 @@
 				  </div>
   
 				  <div class="container">
-					  <img class="service-img" src="media/roof2.jpg">
+					  <img class="service-img" src="media/roof_services.jpg" alt="Red roof">
 					  <div class="text">
 					  Roof cleaning is the process of removing algae,mold, mildew, lichen and moss from roofs. Also cleaning oxidation on metal roofs. 
 					  </div>
@@ -88,7 +86,7 @@
 				  </div>
 				  
 				  <div class="container">
-					  <img class="service-img" src="media/driveway.jpg">
+					  <img class="service-img" src="media/driveway.jpg" alt="Clean driveway">
 					  <div class="text">
 					  Driveway washing services are suitable for many driveway surfaces including: </br>Tarmacadam driveway cleaning </br>Imprinted concrete driveway cleaning </br>Cobblelock brick driveway cleaning</br> Block Paving driveway cleaning </br>Monoblock driveway cleaning.
 					  </div>
@@ -96,7 +94,7 @@
 				  </div>
 				  
 				  <div class="container">
-					  <img class="service-img" src="media/gutterN.jpg">
+					  <img class="service-img" src="media/gutter_services.jpg" alt="Gutter water">
 					  <div class="text">
 					   If your gutters have started overflowing it’s time for a clean. We can unblock everything from your gutters.
 					  
@@ -105,7 +103,7 @@
 				  </div>
 				  
 				  <div class="container">
-					  <img class="service-img" src="media/grass.jpg">
+					  <img class="service-img" src="media/grass.jpg" alt="Hand rolling grass">
 					  <div class="text">
 					  Roll out grass can offer an amazing looking lawn quickly and effectively without having to wait years and dedicate time and effort to filling in all the bare patches. The garden grass is installed in a short space of time, transforming your garden. 
 					  </div>
@@ -113,7 +111,7 @@
 				  </div>
 				  
 				  <div class="container">
-					  <img class="service-img" src="media/tree-surgeon2.jpg">
+					  <img class="service-img" src="media/tree-surgeon_services.jpg" alt="The man surgeon tree">
 					  <div class="text">
 					  We provide all types of tree surveys, including Arboricultural Impact Assessments and Tree Constraints Plan.
 					  </div>
@@ -121,7 +119,7 @@
 				  </div>
 		  
 			  <div class="container">
-					  <img class="service-img" src="media/PVCcleaning.png">
+					  <img class="service-img" src="media/PVCcleaning.png" alt="PVCcleaning gutter">
 					  <div class="text">
 					  We offer a PVC cleaning service to homes and businesses throughout the Causeway Coast & Glens Borough. Removing dirt and grime from your home's PVC can really brighten up your property and improve curb appeal.
 					  </div>
@@ -129,7 +127,7 @@
 				  </div>
 			  
 			  <div class="container">
-					  <img class="service-img" src="media/housewashdown.jpg">
+					  <img class="service-img" src="media/housewashdown.jpg" alt="The clean house">
 					  <div class="text">
 					  Deep cleaning involves a thorough scrubbing of all surfaces, even hard-to-reach areas.
 					  </div>
@@ -137,13 +135,41 @@
 				  </div>
 				  
 				  <div class="container">
-					  <img class="service-img" src="media/blockpavingre.jpg">
+					  <img class="service-img" src="media/blockpaving.jpg" alt="Blockpaving">
 					  <div class="text">
 					  Restore your block paved driveway are that it is important to maintain your block paving on a regular basis.
 					  Our services include block paving cleaning, re-sanding and sealing.
 					  </div>
 					  <div class="service-name"><a href="#paving">Blockpaving</a></div>
 				  </div>
+
+
+				  <div class="container">
+					<img class="service-img" src="media/trimm_bush.jpg" alt="The tool trimming hedge">
+					<div class="text">
+						We provide hedge trimming and hedge maintenance and our hedge removal services. 
+					</div>
+					<div class="service-name"><a href="#trimming">Trimming</a></div>
+				  </div>
+
+				  <div class="container">
+					<img class="service-img" src="media/planting.jpg" alt="Planting process">
+					<div class="text">
+						Garden Planting can often prove to be the most cost effective way of improving a garden. 
+						 We have extensive knowledge of which plants are most likely to succeed in gardens in Ireland.
+					</div>
+					<div class="service-name"><a href="#planting">Planting</a></div>
+				  </div>
+		  
+				  
+				  <div class="container">
+					<img class="service-img" src="media/Garden Cleaning.jpg" alt="Cleaning garden">
+					<div class="text">
+						We offer services such as weeding, pruning of shrubs and hedges, mulching, lawn care to keep it in great condition, cleaning.
+						
+					</div>
+					<div class="service-name"><a href="#garden">Garden Cleaning</a>	</div>
+					</div>
 		  
 			  </div>
 			  
@@ -179,63 +205,26 @@
 					  <span>Blockpaving Resand. </span> Restore your block paved driveway are that it is important to maintain your block paving on a regular basis, as without regular cleaning, driveways can become dirty and damp weather can attract algae, moss, lichen and weeds to grow on your driveway blocks paving and slabs and in the joints, in turn this can cause the block paving and other areas of the driveway to become cracked, sink or raised as a result.
 					  Our services include block paving cleaning, re-sanding and sealing.
 					  </div>
+					  <div id="trimming">
+						<span>Tree, hedge trimming. </span>The best time to prune is after flowering. If the plant needs to be renovated, or severely reduced, 
+						this can be done late winter and early spring just before growth begins. 
+						Remove old flowers (deadhead) and cut back to healthy outward facing buds. Remove damaged, diseased, old wood and straggly growth.
+					  </div>
+					  <div id="planting">
+						A new garden or an existing garden can be greatly improved by good <span>Garden Planting</span> and new Planting Ideas. 
+						 Adding some new  plants or creating a new garden border can have an amazing effect on your garden. 
+						 At very competitive rates we can give you Planting Advise for your garden.  We can give you some great planting ideas and/or we can re-design your garden planting. 
+						 This can be stand alone service or if you wish to we can also, provide the plants for you to plant or if required plant it for you.      
+					  </div>
+					  <div id="garden">
+						<span>Garden Cleaning</span>A good garden maintenance company will offer services such as weeding, pruning of shrubs and hedges, mulching, lawn care to keep it in great condition, 
+						cleaning off of decking and patios (jet-washing), installation and care of irrigation systems, servicing and maintenance of water features, planting and green wall maintenance.
+						 Everything you need done in your garden to keep it looking wonderful and make it a pleasant place to be.
+					  </div>
 			  </div>
 					  
-		  <div id="other"> <p class="ot">Other</p>
-					  <div class="accordion" id="accordionPanelsStayOpenExample">
-	<div class="accordion-item">
-	  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-		  Ridge Tiles Replacement
-		</button>
-	  </h2>
-	  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-		<div class="accordion-body">
-		 If you need someone to help with ridge tiling in Dublin, you can rely on our team to carry out fast and reliable work for your ridgeline. From fixing loose ridge tiles by lifting and reseating them to replacing old or cracked ride tiles with new clay ridge tiles.
-		</div>
-	  </div>
-	</div>
-	<div class="accordion-item">
-	  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-		  Stone/Gravel Chippings
-		</button>
-	  </h2>
-	  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-		<div class="accordion-body">
-		  From sleek slate chippings to beautiful Scottish cobbles, our selection of garden stones, gravel and chippings includes something to suit every outdoor space. Whether you're giving your paths a refresh or planning a whole garden renovation, find everything you need in our range of high-quality stones and gravel.
-		</div>
-	  </div>
-	</div>
-	<div class="accordion-item">
-	  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-		  Tarmac Restoration
-		</button>
-	  </h2>
-	  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-		<div class="accordion-body">
-		  Our tarmac restoration process involves soft washing / power washing off the existing driveway area and ensuring that all the algae and moss is removed from your tarmac. Once it has dried we will apply multiple coats of our tarmac sealer to your driveway.
-		</div>
-	  </div>
-	</div>
-  </div>
-  </div>	
-	  <div class="cont-ser">
-		  <div id="contact-ser">Need other services? We can offer many individual servises<br/><button onclick="alter()">Contact us!</button></div>
-		  <div  id="f-ser"><form>
-		  <label>Name:</label> <input type="text" id="name" placeholder="Please enter your name"></br>
-		  <label> Phone number:</label> <input type="tel" name="phone" placeholder="Please enter your phone number"></br>
-		  <input type="button" value="Submit" onclick="alter2()">
-		  </form>
-		  <p id="cb">We will get back with you shortly!</p>
-		  </div>
-		  
-		  
-	  </div>
-		  
-	  </div>
-    
+		 
+	
 	     <div id="footer-wrap">
         <div class="footer-content">
             <h3 class="footer-heading">Menu</h3>
