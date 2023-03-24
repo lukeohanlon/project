@@ -48,12 +48,11 @@ ul {
 }
 
 .iphone {
-padding-left: 5px;
+  padding-left: 5px;
 }
 
 .phone-btn {
   font-size: 200px;
-
 }
 
 .nav-call-btn {
@@ -124,11 +123,10 @@ button {
 .top-nav a.menu-item {
   font-size: 1.4em;
   font-weight: 300;
- 
 }
 
 .menu-item-call {
-font-size: 1em !important;
+  font-size: 1em !important;
   font-weight: 300;
   padding: 0 !important;
   margin: 0;
@@ -139,7 +137,6 @@ font-size: 1em !important;
   font-size: 1.4em;
   border-bottom: 1px solid #21ba45;
   border-radius: 0px !important;
-  
 }
 
 .top-nav .mobile-menu-btn {
@@ -186,9 +183,8 @@ font-size: 1em !important;
   box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.6);
 }
 /* Katherine */
-.main-btn:hover{
+.main-btn:hover {
   background-color: #25dc50;
-
 }
 /* ***************** ALL | Navigation Main | END *****************   Luke */
 
@@ -616,7 +612,7 @@ font-size: 1em !important;
   justify-content: center;
 }
 
-.contact-head{
+.contact-head {
   margin-top: 2em;
 }
 
@@ -625,9 +621,7 @@ font-size: 1em !important;
   width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-
 }
-
 
 .form {
   width: 100%;
@@ -647,7 +641,7 @@ font-size: 1em !important;
 }
 
 .contact-form:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 26px;
   height: 26px;
@@ -757,7 +751,7 @@ textarea.input {
 
 .input-container span:before,
 .input-container span:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 10%;
   opacity: 0;
@@ -788,7 +782,6 @@ textarea.input {
   width: 50%;
   opacity: 1;
 }
-
 
 .contact-info {
   padding: 2.3rem 2.2rem;
@@ -836,7 +829,7 @@ p:last-child {
   color: #5f5f5f;
   margin: 0.7rem 0;
   align-items: center;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
@@ -876,7 +869,7 @@ p:last-child {
 
 .contact-icons a:hover {
   transform: scale(1.05);
-  color:#21ba45;
+  color: #21ba45;
 }
 
 /* ***************** CONTACT END *****************   Luke */
@@ -896,7 +889,7 @@ p:last-child {
 }
 
 .footer-heading {
-  border-bottom:#21ba45 1px solid;
+  border-bottom: #21ba45 1px solid;
   font-weight: 400;
 }
 
@@ -946,145 +939,140 @@ p:last-child {
 
 /* ***************** ABOUT ***************** Katherine */
 
-
-.about-wrap{
-  width:100%;
-  height:100%;
+.about-wrap {
+  width: 100%;
+  height: 100%;
 }
-.about-banner{
+.about-banner {
   background-image: url(./media/Tool\ Belt.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  display:flex;
+  display: flex;
   align-items: flex-end;
   justify-content: center;
-  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-.about-overlay{
+.about-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 500px;
-  position:absolute;
+  position: absolute;
 }
-.about-banner-header{
+.about-banner-header {
   font-size: 60px;
   height: 50%;
-  color:white;
+  color: white;
   z-index: 2;
   border-bottom: #94949480 1px solid;
 }
-.work-history{
+.work-history {
   background-image: url(./media/work-landscaping.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   min-height: 700px;
-  width:96%;
-  display:flex;
+  width: 96%;
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin:0 2%;
+  margin: 0 2%;
   clip-path: polygon(100% 0, 100% 83%, 91% 100%, 0 100%, 0 0);
 }
-.text-block{
+.text-block {
   background-color: rgba(0, 0, 0, 0.7);
-  color:#fff;
+  color: #fff;
   padding: 2em;
   margin: 2em 0 0 4em;
   width: 30%;
   min-height: 64%;
   clip-path: polygon(100% 0, 100% 83%, 80% 100%, 0 100%, 0 0);
-  font-weight:300;
+  font-weight: 300;
 }
-.text-block p{
-  font-size:18px;
+.text-block p {
+  font-size: 18px;
 }
-.text-block ul{
-  font-size:1.4em;
+.text-block ul {
+  font-size: 1.4em;
 }
-.text-block h4{
-  font-size:2em;
-  color:#21ba45;
+.text-block h4 {
+  font-size: 2em;
+  color: #21ba45;
   font-weight: 400;
 }
 
-
 /* ***************** ABOUT END ***************** */
 /* ***************** WORK *****************  Kathrine */
-.work-wrap{
-  width:100%;
-  height:100%;
+.work-wrap {
+  width: 100%;
+  height: 100%;
 }
-.work-banner{
+.work-banner {
   background-image: url('./media/Roof_plate.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  display:flex;
+  display: flex;
   align-items: flex-end;
   justify-content: center;
-  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-.work-overlay{
+.work-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 400px;
-  position:absolute;
+  position: absolute;
 }
-.work-banner-header{
+.work-banner-header {
   font-size: 60px;
   height: 50%;
-  color:white;
+  color: white;
   z-index: 2;
   border-bottom: #94949480 1px solid;
 }
-.gallery-heading{
-  width:100%;
+.gallery-heading {
+  width: 100%;
   font-size: 30px;
   margin: 20px 0;
   text-align: center;
-
 }
-.work-section{
-  display:flex;
-  padding:0 0;
+.work-section {
+  display: flex;
+  padding: 0 0;
 }
-.work-image{
-  
-  transition:all .5s ease-in-out;
-  height:300px;
+.work-image {
+  transition: all 0.5s ease-in-out;
+  height: 300px;
   width: 30vw;
   margin: 2em;
   clip-path: polygon(100% 0, 100% 83%, 80% 100%, 0 100%, 0 0);
-  }
-  .work-image:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
-  }
-.work-content{
-  padding:40px 40px;
+}
+.work-image:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.work-content {
+  padding: 40px 40px;
   font-size: 1.6em;
   text-align: left;
 }
 
-.work-heading{
+.work-heading {
   font-size: 25px;
 }
-.work-content2{
+.work-content2 {
   background-color: #fafafa;
-  padding:40px 40px;
+  padding: 40px 40px;
   font-size: 1.6em;
   text-align: right;
 }
-.work-image2{
-  
-  transition:all .5s ease-in-out;
-  height:300px;
+.work-image2 {
+  transition: all 0.5s ease-in-out;
+  height: 300px;
   width: 500px;
   object-fit: cover;
   object-position: center;
@@ -1095,18 +1083,18 @@ p:last-child {
 .work-image2:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
-.patio{
+.patio {
   min-width: 500px;
 }
-.work-button:hover{
+.work-button:hover {
   background-color: #21ba45ab;
 }
-.work-image3{
-width: 100%;
-height: 500px;
-padding: 20px;
+.work-image3 {
+  width: 100%;
+  height: 500px;
+  padding: 20px;
 }
 /* ***************** WORK END *****************  Kathrine */
 
@@ -1128,12 +1116,10 @@ padding: 20px;
     border-radius: 30px;
     font-size: 17px;
     transition: all 0.3s ease-in-out;
-}
+  }
 }
 
 @media screen and (max-width: 960px) {
-  
-
   .top-nav .mobile-menu-btn {
     display: flex;
     color: #fff;
@@ -1235,23 +1221,18 @@ padding: 20px;
     font-size: 0.8em;
   }
 
-  .reverse{
-    display:flex;
+  .reverse {
+    display: flex;
     flex-direction: column !important;
   }
-
 }
 
-
 @media (max-width: 850px) {
-
-  .contact-container{
+  .contact-container {
     padding: 5em;
   }
   .contact-overlay {
-  
     padding: 5em;
-
   }
 
   .form {
@@ -1338,13 +1319,13 @@ padding: 20px;
 
   p:last-child {
     margin-bottom: 15px !important;
-}
+  }
 
   .info div {
     padding: 0 !important;
   }
 
-  .contact-container{
+  .contact-container {
     padding: 3em;
   }
 
@@ -1433,17 +1414,16 @@ padding: 20px;
   .footer-content a:hover {
     color: #21ba45;
     font-size: 1.2rem;
-
   }
 }
 
 @media (max-width: 480px) {
   .contact-container {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   .contact-container-overlay {
-    padding: .4rem;
+    padding: 0.4rem;
   }
 
   form,
@@ -1466,7 +1446,7 @@ padding: 20px;
     height: 30px;
     line-height: 30px;
   }
-  .google-map{
+  .google-map {
     width: 100%;
   }
 
@@ -1484,15 +1464,15 @@ padding: 20px;
 
   #footer-wrap {
     display: flex;
-   justify-content: space-around;
+    justify-content: space-around;
     /* flex-direction: column; */
   }
- 
+
   .mobile-hide {
     display: none;
   }
 
-  .footer-content  {
+  .footer-content {
     padding: 40px 20px;
     font-weight: 400;
     align-items: flex-start;
@@ -1537,12 +1517,12 @@ padding: 20px;
   .services-content-2 {
     flex-wrap: wrap;
   }
-
 }
 
 /* ************ SERVICES ************** */
 
 #services-main {
+
 	position: relative;
 	width: 100%;
 	display: flex;
@@ -1569,23 +1549,23 @@ padding: 20px;
 
 
 .ser-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 400px;
-    position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 400px;
+  position: absolute;
 }
 .ser-banner {
-    background-image: url('media/box-hedge.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  background-image: url('media/box-hedge.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-.ser-header {
+
     font-size: 60px;
     height: 50%;
     color: white;
@@ -1674,10 +1654,134 @@ padding: 20px;
 .info-ser div{
 	padding-top: 30px;
 	
+
 }
 .info-ser span {
-	color:#21ba45;
+  color: #21ba45;
 }
+
+.accordion-button {
+  font-size: 18px;
+}
+.accordion-button:hover,
+.accordion-button:focus {
+  border: solid #1f2f44;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.accordion-button {
+  border: solid #1f2f44;
+}
+.accordion-button:not(.collapsed) {
+  background: none;
+  color: #1f2f44;
+}
+#contact-ser {
+  background-color: #21ba45;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: white;
+  width: 40%;
+  border: solid #1f2f44;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 200%;
+  margin: 0 30% 50px 30%;
+  padding: 10px;
+}
+#contact-ser button {
+  border: none;
+  background-color: #21ba45;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: white;
+}
+#contact-ser button:hover {
+  font-size: 1.8em;
+  border-bottom: 2px solid white;
+}
+.cont-ser {
+  position: relative;
+  width: 100%;
+}
+#f-ser {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.6em;
+  font-weight: 400;
+  left: 35%;
+  visibility: hidden;
+}
+#f-ser input {
+  width: 400px;
+}
+#cb {
+  position: absolute;
+  top: 0;
+  font-size: 1.6em;
+  font-weight: 400;
+  visibility: hidden;
+}
+@media screen and (max-width: 500px) {
+  #services-main {
+    grid-template-columns: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .info-ser,
+  #other,
+  #contact-ser {
+    margin: 10px 10px;
+  }
+
+  #other,
+  #contact-ser {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #contact-ser {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 90%;
+  }
+  #f-ser {
+    left: 5%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #services-main {
+    grid-template-columns: auto auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #services-main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .info-ser,
+  #other,
+  #contact-ser {
+    margin: 10px 10px;
+  }
+
+  #other,
+  #contact-ser {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #contact-ser {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 90%;
+  }
+  #f-ser {
+    left: 5%;
+  }
+}
+
 
 
 @media screen and (max-width: 500px){
@@ -1691,9 +1795,11 @@ padding: 20px;
 }
 	
 
+
 /* ***************** Testimonials **************** */
 
 #test {
+
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -1707,12 +1813,13 @@ padding: 20px;
 }
 
 .test-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 400px;
-    position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 400px;
+  position: absolute;
 }
 .test-banner {
+
     height: 400px;
     width: 100%;
     position: absolute;
@@ -1752,7 +1859,8 @@ padding: 20px;
 }
 .name{
 	padding-top: 20px;
+
 }
 .checked {
-	color:#21ba45;
+  color: #21ba45;
 }
