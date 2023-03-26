@@ -793,6 +793,10 @@ textarea.input {
 .contact-info {
   padding: 2.3rem 2.2rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 input:active {
   color: #1f2f44;
