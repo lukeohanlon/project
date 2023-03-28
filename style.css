@@ -1553,21 +1553,6 @@ padding: 20px;
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {--bs-gutter-x: 0rem !important;} 
 
-#btn{
-  display: none;
-  position: fixed;
-  bottom: 320px;
-  width: 10%;
-  height: 30px;
-  right: 30px;
-  z-index: 3;
-  background-color: #21ba45;
-  color:white;
-  font-size: 1.6em;
-  border-radius: 20px;
-  border:none;  
-}
-
 
 .ser-overlay {
     background-color: rgba(0, 0, 0, 0.6);
@@ -1708,6 +1693,10 @@ padding: 20px;
   #f-ser {
     left: 5%;
   }
+  .test-header{
+    left: 20%;
+  }
+  
 }
 
 /* ***************** Testimonials **************** */
@@ -1722,16 +1711,18 @@ padding: 20px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 400px;
 }
 
 .test-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 400px;
     position: absolute;
 }
 .test-banner {
-  background-image: url('media/client-testimonial.jpg');
+   width: 100%;
+  position: absolute;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1776,4 +1767,31 @@ padding: 20px;
 }
 .checked {
 	color:#21ba45;
+}
+
+
+/************* Scroll button **********/
+
+
+.scroll-btn-container {
+  position: relative;
+}
+
+.scroll-btn {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow:2px 2px 5px rgba(0, 0, 0, 0.6);
+  /*background-color: #21ba45;*/
+  color: #fff;
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  z-index: 9999;
 }
