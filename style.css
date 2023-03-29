@@ -17,6 +17,9 @@ input {
 p {
   font-weight: 300;
 }
+button, a {
+  cursor: pointer;
+}
 
 ul {
   list-style: none;
@@ -171,6 +174,7 @@ button {
   font-size: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   transition: all 0.2s ease-in-out;
+  z-index: 13;
 }
 .main-btn:active {
   background-color: #21ba45;
@@ -258,8 +262,112 @@ button {
   background-color: #21ba45ab;
 }
 
+
 /* ***************** HOME | Banner | END *****************   Luke */
 
+#modal{
+  z-index: 1;
+  opacity: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease-in-out;
+}
+.modal-overlay {
+  background-color: rgb(0, 0, 0, 0.7);
+  height: 100%; 
+  position: absolute;
+  width: 100%;
+}
+.modal-box{
+  z-index: 20;
+  transform: translateX( -100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 80%;
+  max-width: 800px;
+  line-height: 1.5em;
+  font-size: 2em;
+  padding: 40px;
+  color: #fff;
+  background-color: rgb(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.7);
+  transition: all 0.5s ease-in-out;
+}
+#modal-icon {
+  color:#fff;
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: 10px 20px 0 0 ;
+}
+#modal-icon:hover {
+  color:#21ba45;
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: 10px 20px 0 0 ;
+}
+
+.modal-box p{
+font-size: .7em;
+  padding: 10px 40px;
+ 
+
+}
+
+.modal-txt {
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal-box h2{
+ width: fit-content;
+  font-size: 1.4em;
+  color: #21ba45;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 20px;
+
+}
+.info-content  {
+  z-index: 14 !important;
+}
+.services-content  {
+  z-index: 14 !important;
+  /* cursor: pointer; */
+}
+.services-content a {
+  z-index: 14 !important;
+  /* cursor: pointer; */
+}
+.services-item {
+  z-index: 14 !important;
+  cursor: pointer;
+  font-size: 1.5em;
+  line-height: 1.42em;
+}
+.services-item:hover {
+  z-index: 14 !important;
+  cursor: pointer;
+  font-size: 1.5em;
+  line-height: 1.42em;
+  color:#21ba45
+}
+.main-btn-serv {
+  z-index: 12 !important;
+}
 /* ***************** HOME | Recycle Banner | ***************   Luke */
 
 #recycle-banner {
@@ -938,6 +1046,7 @@ p:last-child {
   justify-content: center;
   color: #fff;
   background-color: #1f2f44;
+  z-index: 13;
 }
 
 .footer-heading {
@@ -1537,6 +1646,19 @@ p:last-child {
 }
 
 @media (max-width: 480px) {
+  .modal-box p{
+    font-size: .7em;
+      padding:0 !important;
+
+    }
+    .modal-box {
+       
+        padding: 20px 20px !important;
+        /* margin: 0 !important; */
+        width: 95% !important;
+       
+      
+      }
   .contact-container {
     padding: 0.5rem;
   }
@@ -1892,7 +2014,6 @@ p:last-child {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   color: #21ba45;
   background-color: #1f2f44;
-  /* color: #fff; */
   font-size: 1.6em;
   border: none;
   text-align: center;

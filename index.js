@@ -1,5 +1,27 @@
 // **************** Luke *****************
-
+let modalContent = document.getElementById('modal-txt')
+let modalChoice = ''
+showModal = (e) => {
+  console.log(texts)
+  // modalChoice.style.display = "none"
+  var modalChoice = document.getElementById(e)
+  
+  console.log(modalChoice)
+  modalChoice.style.display = "flex"
+  modal.style.opacity = "1"
+  modal.style.zIndex = "15"
+  modalBox.style.transform = "translate(0)"
+}
+closeModal = () => {
+  [].forEach.call(texts, (text) => {
+    text.style.display = "none"
+  })
+  
+  modal.style.opacity = "0"
+  modal.style.zIndex = "1"
+  modalBox.style.transform = "translate(-100%)"
+  // modalContent.style.display = 'none'
+}
 if (document.getElementById('home') != null) {
   const interval = setInterval(() => {
     sliCount = sliCount + 1
@@ -33,6 +55,59 @@ if (document.getElementById('home') != null) {
     const slideWidth = slide.clientWidth
     slideCont.scrollLeft -= slideWidth
   })
+  // let modalContent = document.getElementById('modal-txt')
+
+function popUp() {
+  var popup = document.getElementById('myPopup')
+  popup.classList.toggle('show')
+  setTimeout(() => {
+    popup.classList.toggle('show')
+  },1500)
+}
+
+// function circleChange() {
+//   let cont = document.getElementById('container1')
+//   let shower = document.getElementById('shower')
+//   let hider = document.getElementById('hider')
+//   let text1 = document.getElementById('text1')
+//   let form = document.getElementById('form')
+//   let box = document.getElementById('success-box')
+//   let icon = document.getElementById('icon')
+//     shower.style.opacity = '0'
+//     hider.style.opacity = '1'
+//     text1.style.opacity='1'
+//     cont.style.borderRadius='10px'
+   
+//   // }
+// }
+let texts = document.getElementsByClassName('modal-txt')
+console.log(texts)
+// let modalChoice = ''
+let modal = document.getElementById('modal')
+let modalBox = document.getElementById('modal-box')
+// let modalChoice = ""
+// let x = 'quote-btn';
+showModal = (e) => {
+  console.log(texts)
+  // modalChoice.style.display = "none"
+  var modalChoice = document.getElementById(e)
+  
+  console.log(modalChoice)
+  modalChoice.style.display = "flex"
+  modal.style.opacity = "1"
+  modal.style.zIndex = "15"
+  modalBox.style.transform = "translate(0)"
+}
+closeModal = () => {
+  [].forEach.call(texts, (text) => {
+    text.style.display = "none"
+  })
+  
+  modal.style.opacity = "0"
+  modal.style.zIndex = "1"
+  modalBox.style.transform = "translate(-100%)"
+  // modalContent.style.display = 'none'
+}
 }
 
 if (document.getElementById('contact')) {
@@ -57,12 +132,15 @@ if (document.getElementById('contact')) {
 
   var form = document.getElementById('f')
 
+  
+
   function sendSuccess() {
     e.preventDefault()
     if (form.checkValidity()) {
       alert('Adding Succesful!')
     }
   }
+
 }
 
 /* ******** Anna ********* */
