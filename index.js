@@ -1,81 +1,115 @@
-const slideCont = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
-const prevButton = document.getElementById("slide-arrow-prev");
-const nextButton = document.getElementById("slide-arrow-next");
+// **************** Luke *****************
 
-nextButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slideCont.scrollLeft += slideWidth;
-});
+if (document.getElementById('home') != null) {
+  const interval = setInterval(() => {
+    sliCount = sliCount + 1
+    startSlider()
+  }, 4000)
 
-prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slideCont.scrollLeft -= slideWidth;
-});
+  startSlider = () => {
+    if (sliCount <= 3) {
+      const sliderWidth = slide.clientWidth
+      slideCont.scrollLeft += sliderWidth
+      console.log(sliCount)
+      // sliCount++
+    } else {
+      const sliderWidth = slide.clientWidth
+      slideCont.scrollLeft -= sliderWidth * 5
+      sliCount = 0
+    }
+  }
 
-const inputs = document.querySelectorAll(".input");
+  const slideCont = document.getElementById('slides-container')
+  const slide = document.querySelector('.slide')
+  const prevButton = document.getElementById('slide-arrow-prev')
+  const nextButton = document.getElementById('slide-arrow-next')
 
-function focusFunc() {
-  let parent = this.parentNode;
-  parent.classList.add("focus");
+  nextButton.addEventListener('click', () => {
+    const slideWidth = slide.clientWidth
+    slideCont.scrollLeft += slideWidth
+  })
+
+  prevButton.addEventListener('click', () => {
+    const slideWidth = slide.clientWidth
+    slideCont.scrollLeft -= slideWidth
+  })
 }
 
-function blurFunc() {
-  let parent = this.parentNode;
-  if (this.value == "") {
-    parent.classList.remove("focus");
+if (document.getElementById('contact')) {
+  const inputs = document.querySelectorAll('.input')
+
+  function focusFunc() {
+    let parent = this.parentNode
+    parent.classList.add('focus')
+  }
+
+  function blurFunc() {
+    let parent = this.parentNode
+    if (this.value == '') {
+      parent.classList.remove('focus')
+    }
+  }
+
+  inputs.forEach(input => {
+    input.addEventListener('focus', focusFunc)
+    input.addEventListener('blur', blurFunc)
+  })
+
+  var form = document.getElementById('f')
+
+  function sendSuccess() {
+    e.preventDefault()
+    if (form.checkValidity()) {
+      alert('Adding Succesful!')
+    }
   }
 }
 
-inputs.forEach((input) => {
-  input.addEventListener("focus", focusFunc);
-  input.addEventListener("blur", blurFunc);
-});
+/* ******** Anna ********* */
 
-var form = document.getElementById('f');
-
-function sendSuccess() {
-  e.preventDefault()
-  if (form.checkValidity()) {
-    alert("Adding Succesful!");
-  }
+let mybutton = document.getElementById('scroll-btn')
+window.onscroll = function (e) {
+  scrollFunction(e)
 }
-
-function circleChange() {
-  let cont = document.getElementById('container1')
-  let shower = document.getElementById('shower')
-  let hider = document.getElementById('hider')
-  let text1 = document.getElementById('text1')
-  // let text1 = document.getElementById('text1')
-  let form = document.getElementById('form')
-  let box = document.getElementById('success-box')
-  let icon = document.getElementById('icon')
-  // if (form.checkValidity()) {
-    // document.getElementById('user-name').innerHTML = name
-    // document.getElementById('user-email').innerHTML = email
-    shower.style.opacity = '0'
-    hider.style.opacity = '1'
-    text1.style.opacity='1'
-    cont.style.borderRadius='10px'
-   
-  // }
-}
-
-
-/*********** Scroll button **************/
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.querySelector('.scroll-btn').style.display = "block";
+function scrollFunction(e) {
+  if (window.scrollY > 20) {
+    mybutton.style.opacity = '1'
+    mybutton.style.zIndex = '12'
   } else {
-    document.querySelector('.scroll-btn').style.display = "none";
+    mybutton.style.opacity = '0'
+    mybutton.style.zIndex = '1'
   }
 }
 
-document.querySelector('.scroll-btn').addEventListener('click', function() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
+mybutton.addEventListener('click', e => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  })
+})
+
+/* ******** Katherine ********* */
+
+if (document.getElementById('about') != null) {
+  const interval = setInterval(() => {
+    sliCount = sliCount + 1
+    startSlider2()
+  }, 2000)
+  var sliCount = 0
+  const sliderCont = document.querySelector('.about-slider')
+  const slider = document.querySelector('#sli-img')
+  console.log('hi')
+  startSlider2 = () => {
+    if (sliCount <= 10) {
+      const sliderWidth = slider.clientWidth
+      sliderCont.scrollLeft += sliderWidth
+      console.log(sliCount)
+      // sliCount++
+    } else {
+      const sliderWidth = slider.clientWidth
+      sliderCont.scrollLeft -= sliderWidth * 10
+      sliCount = 0
+    }
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       crossorigin="anonymous"
@@ -19,16 +19,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400&family=Oswald:wght@200;300;700&display=swap" rel="stylesheet">
+       
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Swift | Our Work</title>
-
-    <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
     <div class="ui sidebar inverted right vertical menu">
@@ -41,7 +37,7 @@
       <a class="item" href="contact.html">Contact</a>
       <button class="phone-menu">Call Us <i class="phone icon"></i></button>
     </div>
-    <div class="pusher">
+    <div id="work" class="pusher">
       <div class="top-nav">
         <a href="index.html"><img class="logo" src="./media/4.png" /></a>
         <div class="menu-top">
@@ -51,7 +47,11 @@
           <a class="menu-item" href="services.html">Services</a>
           <a class="menu-item" href="Testimonials.html">Testimonials</a>
           <a class="menu-item" href="contact.html">Contact</a>
-          <a class="menu-item-call" href="tel:0871234567"><button onclick="" class="phone-menu nav-call-btn ">Call Us <span class="iphone"><i class="phone icon"></i></span></button></a>
+          <a class="menu-item-call" href="tel:0871234567"
+            ><button onclick="" class="phone-menu nav-call-btn">
+              Call Us
+              <span class="iphone"><i class="phone icon"></i></span></button
+          ></a>
         </div>
         <button
           class="mobile-menu-btn"
@@ -63,6 +63,10 @@
       <!-- Site content !-->
       <div class="work-wrap">
         <div class="work-banner">
+          <div class="work-overlay"></div>
+          <h2 class="work-banner-header">Our Works</h2>
+        </div>
+        <div class="work-banner-mobile">
           <div class="work-overlay"></div>
           <h2 class="work-banner-header">Our Works</h2>
         </div>
@@ -195,27 +199,31 @@
             src="./media/Patio Cleaning2.jpg"
           />
         </div>
-
+        <div class="scroll-btn-container">
+          <button id="scroll-btn" class="scroll-btn">
+            <i class="angle up icon"></i>
+          </button>
+        </div>
         <!-- FOOTER  -->
         <footer>
           <div id="footer-wrap">
             <div class="footer-content">
-          <div class="foot-head">
-            <h3 class="footer-heading">Menu</h3>
-          </div>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="work.html">Work</a>
-          <a href="services.html">Services</a>
+              <div class="foot-head">
+                <h3 class="footer-heading">Menu</h3>
+              </div>
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="work.html">Work</a>
+              <a href="services.html">Services</a>
             </div>
             <div class="footer-content mobile-hide">
-          <div class="foot-head">
-            <h3 class="footer-heading">Services</h3>
-          </div>
-                <a href="">Landscaping</a>
-                <a href="">Cleaning</a>
-                <a href="">Trimming</a>
-                <a href="">Roof Repairs</a>
+              <div class="foot-head">
+                <h3 class="footer-heading">Services</h3>
+              </div>
+              <a href="">Landscaping</a>
+              <a href="">Cleaning</a>
+              <a href="">Trimming</a>
+              <a href="">Roof Repairs</a>
             </div>
             <div class="footer-content icon-align-left">
               <div class="foot-head">
@@ -231,10 +239,12 @@
               <a href="https://wa.me/+353871234567"
                 ><i class="whatsapp icon"></i> WhatsApp</a
               >
-                </div>
+            </div>
             <div class="footer-content-bottom">GroupF © | 2023</div>
           </div>
         </footer>
+      </div>
     </div>
   </body>
+  <script type="text/javascript" src="index.js"></script>
 </html>

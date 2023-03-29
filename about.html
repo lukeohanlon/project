@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       crossorigin="anonymous"
     ></script>
     <link
       rel="stylesheet"
-      ƒ
       href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
     />
     <script
@@ -20,16 +19,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400&family=Oswald:wght@200;300;700&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Swift | About Us</title>
-
-    <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
     <div class="ui sidebar inverted right vertical menu">
@@ -43,7 +38,7 @@
       <button class="phone-menu">Call Us <i class="phone icon"></i></button>
     </div>
 
-    <div class="pusher">
+    <div id="about" class="pusher">
       <div class="top-nav">
         <a href="index.html"><img class="logo" src="./media/4.png" /></a>
         <div class="menu-top">
@@ -53,7 +48,11 @@
           <a class="menu-item" href="services.html">Services</a>
           <a class="menu-item" href="Testimonials.html">Testimonials</a>
           <a class="menu-item" href="contact.html">Contact</a>
-          <a class="menu-item-call" href="tel:0871234567"><button onclick="" class="phone-menu nav-call-btn ">Call Us <span class="iphone"><i class="phone icon"></i></span></button></a>
+          <a class="menu-item-call" href="tel:0871234567"
+            ><button onclick="" class="phone-menu nav-call-btn">
+              Call Us
+              <span class="iphone"><i class="phone icon"></i></span></button
+          ></a>
         </div>
         <button
           class="mobile-menu-btn"
@@ -66,6 +65,10 @@
 
       <div class="about-wrap">
         <div class="about-banner">
+          <div class="work-overlay"></div>
+          <h2 class="work-banner-header">About Us</h2>
+        </div>
+        <div class="about-banner-mobile">
           <div class="work-overlay"></div>
           <h2 class="work-banner-header">About Us</h2>
         </div>
@@ -97,8 +100,12 @@
             <p>Call us on 087-1664213 or email info@swifthome.ie</p>
           </div>
           <img
-            class="info-image-right info-img work-image2"
+            class="info-image-right info-img work-image2 desktop-only"
             src="./media/Roofer.jpg"
+          />
+          <img
+            class="info-image-right info-img work-image2 mobile-only"
+            src="./media-mobile/Roofer-min.jpg"
           />
         </div>
 
@@ -135,12 +142,15 @@
             >
           </div>
         </div>
-
         <div class="info-section info-right reverse">
           <img
-            class="info-image-right info-img work-image2"
+            class="info-image-right info-img work-image2 desktop-only"
             src="./media/tree-surgeon.jpg"
           />
+          <img
+          class="info-image-right info-img work-image2 mobile-only"
+          src="./media-mobile/tree-surgeon-min.jpg"
+        />
           <div class="info-content-left info-content">
             <h3 class="info-heading">What We Do</h3>
             <p class="info-text">
@@ -159,23 +169,58 @@
             </p>
           </div>
         </div>
-<div class="about-slider">
-  <div class="about-slider-img"><img src="./media/alci.png"/></div>
-  <div class="about-slider-img"><img src="./media/attic.jpeg"/></div>
-  <div class="about-slider-img"><img src="./media/bostik.png"/></div>
-  <div class="about-slider-img"><img src="./media/gaproofing.png"/></div>
-  <div class="about-slider-img"><img src="./media/gro-sure.jpeg"/></div>
-  <div class="about-slider-img"><img src="./media/Iko.png"/></div>
-  <div class="about-slider-img"><img src="./media/Kelkay.png"/></div>
-  <div class="about-slider-img"><img src="./media/Kemper.jpeg"/></div>
-  <div class="about-slider-img"><img src="./media/SEAI.png"/></div>
-  <div class="about-slider-img"><img src="./media/smart-fence.png"/></div>
-  <div class="about-slider-img"><img src="./media/smart-garden.png"/></div>
-  <div class="about-slider-img"><img src="./media/Velux.png"/></div>
-  <div class="about-slider-img"><img src="./media/Tegral.jpeg"/></div>
-  <div class="about-slider-img"><img src="./media/Westland.png"/></div>
 
-</div>
+        <div class="slider-cont">
+          <div class="about-slider">
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/alci.png" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/attic.jpeg" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/bostik.png" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/gaproofing.png" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/gro-sure.jpeg" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/Iko.png" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/Kelkay.png" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/Kemper.jpeg" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/SEAI.png" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/smart-fence.png" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/smart-garden.png" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/Velux.png" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/Tegral.jpeg" />
+            </div>
+            <div class="about-slider-img slider">
+              <img id="sli-img" src="./media/logo/Westland.png" />
+            </div>
+          </div>
+        </div>
+        <div class="scroll-btn-container">
+          <button id="scroll-btn" class="scroll-btn">
+            <i class="angle up icon"></i>
+          </button>
+        </div>
         <footer>
           <div id="footer-wrap">
             <div class="footer-content">
@@ -217,4 +262,5 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="index.js"></script>
 </html>
