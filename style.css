@@ -355,13 +355,13 @@ font-size: .7em;
 .services-item {
   z-index: 14 !important;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 1.42em;
 }
 .services-item:hover {
   z-index: 14 !important;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 1.42em;
   color:#21ba45
 }
