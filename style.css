@@ -1870,6 +1870,10 @@ p:last-child {
   font-size: 1.6em;
 }
 
+.service-name:hover a{
+  text-decoration: underline 2px;
+}
+
 .info-ser {
   display: block;
   font-weight: 300;
@@ -1912,9 +1916,7 @@ p:last-child {
   #f-ser {
     left: 5%;
   }
-  .test-header {
-    left: 20%;
-  }
+ 
 }
 
 /* ***************** Testimonials **************** */
