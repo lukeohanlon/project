@@ -15,12 +15,16 @@ input {
 }
 
 p {
-  font-weight: 300;
+  font-weight: 400;
 }
 button, a {
   cursor: pointer;
 }
-
+textarea.input{
+  font-family: 'Oswald', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 1.3em;
+}
 ul {
   list-style: none;
   margin: 0 20px 0 20px;
