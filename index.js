@@ -65,21 +65,6 @@ function popUp() {
   },1500)
 }
 
-// function circleChange() {
-//   let cont = document.getElementById('container1')
-//   let shower = document.getElementById('shower')
-//   let hider = document.getElementById('hider')
-//   let text1 = document.getElementById('text1')
-//   let form = document.getElementById('form')
-//   let box = document.getElementById('success-box')
-//   let icon = document.getElementById('icon')
-//     shower.style.opacity = '0'
-//     hider.style.opacity = '1'
-//     text1.style.opacity='1'
-//     cont.style.borderRadius='10px'
-   
-//   // }
-// }
 let texts = document.getElementsByClassName('modal-txt')
 console.log(texts)
 // let modalChoice = ''
