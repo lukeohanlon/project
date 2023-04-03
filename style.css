@@ -707,11 +707,12 @@ font-size: .7em;
 }
 
 .testimonial-btn {
-  background-color: #21ba4564;
+  background-color: #1f2f44;
   color: #fff;
   border-radius: 50px;
   font-size: 2em;
-  border: 1px solid #fff;
+  border: 1px solid #21ba45;
+  /* color: #21ba45 !important; */
   padding: 10px 30px;
   transition: all 0.2s ease-in-out;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
@@ -719,6 +720,7 @@ font-size: .7em;
 .testimonial-btn:active {
   background-color: #21ba4564;
   color: #fff;
+  
   border-radius: 50px;
   font-size: 1.8rem;
   border: 1px solid #fff;
