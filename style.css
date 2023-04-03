@@ -263,6 +263,8 @@ button {
 
 .banner-btn {
   float: right;
+  font-size: 1.3em;
+  letter-spacing: .05em;
 }
 
 .banner-btn:hover {
@@ -1185,9 +1187,14 @@ p:last-child {
 }
 .text-block p {
   font-size: 18px;
+  line-height: 1em;
 }
 .text-block ul {
   font-size: 1.4em;
+}
+.text-block li {
+  padding: 5px 0 20px 0;
+
 }
 .text-block h4 {
   font-size: 2em;
@@ -1311,6 +1318,9 @@ p:last-child {
 }
 .patio {
   min-width: 500px;
+}
+.work-button {
+  font-size: 1.25em;
 }
 .work-button:hover {
   background-color: #21ba45ab;
@@ -1852,7 +1862,7 @@ p:last-child {
 }
 .service-name {
   position: absolute;
-  top: 45%;
+  top: 40%;
   width: 100%;
   margin: 0;
   text-align: center;
@@ -1864,7 +1874,7 @@ p:last-child {
   z-index: 10;
 }
 .sol{
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.35);
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -1876,7 +1886,7 @@ p:last-child {
   margin: 0 !important;
 }
 .text h2 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin-bottom:0px;
 }
 .text {
@@ -1900,6 +1910,9 @@ p:last-child {
   animation: fadeIn 1s;
   z-index: 10;
 }
+.service-main-btn {
+  font-size: 1.1em;
+}
 
 .container:hover .service-img {
   width: 320px;
@@ -1909,7 +1922,7 @@ p:last-child {
   transition: all 0.3s ease-in-out;
 }
 .container:hover .sol {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .8);
   width: 320px;
   height: 320px;
   border-radius: 10%;
