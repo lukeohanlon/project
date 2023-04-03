@@ -110,7 +110,11 @@ button {
 }
 
 .logo {
-  width: 150px;
+  width: 130px;
+  
+}
+.logo-link {
+  padding: 5px 0 5px 20px !important;
 }
 
 .logo-menu {
