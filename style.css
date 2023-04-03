@@ -9,6 +9,7 @@ h1,
 h2,
 h3,
 h4,
+a,
 input {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -19,6 +20,7 @@ p {
 }
 button, a {
   cursor: pointer;
+  
 }
 textarea.input{
   font-family: 'Oswald', sans-serif !important;
@@ -77,8 +79,8 @@ ul {
 }
 
 button {
-  font-family: 'Lato', sans-serif;
   font-weight: 300;
+  font-family: 'Oswald', sans-serif;
 }
 
 .phone-menu:active {
@@ -120,7 +122,7 @@ button {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 12px 16px;
+  padding: 12px 13px;
   text-decoration: none;
   border-radius: 30px;
   font-size: 17px;
@@ -128,15 +130,15 @@ button {
 }
 
 .top-nav a.menu-item {
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 300;
 }
 
 .menu-item-call {
-  font-size: 1em !important;
+  font-size: 1.1em !important;
   font-weight: 300;
   padding: 0 !important;
-  margin: 0;
+  margin: 0 0 0 10px;
   float: none !important;
 }
 
@@ -175,7 +177,8 @@ button {
   border: none;
   border-radius: 20px;
   padding: 5px 20px;
-  font-size: 20px;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   transition: all 0.2s ease-in-out;
   z-index: 13;
@@ -245,6 +248,7 @@ button {
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   z-index: 2;
+  animation: fadeIn 1.5s;
 }
 
 .card-heading {
@@ -371,6 +375,7 @@ font-size: .7em;
 }
 .main-btn-serv {
   z-index: 12 !important;
+  font-size: 1.7em;
 }
 /* ***************** HOME | Recycle Banner | ***************   Luke */
 
@@ -544,7 +549,7 @@ font-size: .7em;
 #quote-btn {
   position: relative;
   color: #fff;
-  background-color: #0b591dd8;
+  background-color:#1f2f44;
   padding: 10px 40px;
   border-radius: 50px;
   border: #fff 2px solid;
@@ -824,7 +829,7 @@ form {
 .title {
   color: #fff;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1;
   margin-bottom: 0.7rem;
 }
@@ -1011,6 +1016,7 @@ p:last-child {
 .contact-icons-wrap p {
   color: #5d5d5d;
   font-size: 1.2rem;
+  margin-bottom: 0;
   font-weight: 300;
 }
 
@@ -1054,7 +1060,7 @@ p:last-child {
 }
 
 .footer-heading {
-  font-size: 1.5em;
+  font-size: 1.7em;
   border-bottom: #21ba45 1px solid;
   font-weight: 400;
 }
@@ -1062,7 +1068,7 @@ p:last-child {
 .footer-content {
   display: flex;
   align-items: center;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 40px 100px;
   flex-direction: column;
@@ -1070,16 +1076,19 @@ p:last-child {
 
 .footer-content a {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 10px;
-  font-weight: 300;
+  font-weight: 200;
+  letter-spacing: .05em;
   text-decoration: none !important;
 }
 
 .footer-content a:hover {
   color: #21ba45;
-  font-size: 1.2rem;
   padding: 10px;
+  font-size: 1.4rem;
+  font-weight: 200;
+  letter-spacing: .05em;
 }
 
 .footer-content-bottom {
@@ -1091,6 +1100,8 @@ p:last-child {
   color: #fff;
   padding: 10px;
   font-weight: 400;
+  font-size: 1.3em;
+  font-family: 'Oswald', sans-serif;
 }
 
 .foot-head {
@@ -1099,6 +1110,9 @@ p:last-child {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+}
+.footer-icon {
+  color: #21ba45;
 }
 
 /* ***************** FOOTER END *****************   Luke */
@@ -1766,6 +1780,17 @@ p:last-child {
 
 /* ************ SERVICES ************** */
 
+/* #serv-list{
+
+    list-style-type: circle;
+
+} */
+#serv-list li::before {
+  content: "\2022";
+  color: #21ba45;
+  padding-right: 10px;
+}
+
 #services-main {
   position: relative;
   width: 100%;
@@ -1813,13 +1838,14 @@ p:last-child {
   height: 300px;
   position: relative;
   margin: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .service-img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: solid 5px #1f2f44;
+  border: solid 3px #1f2f44;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   object-fit: cover;
   transition: all 0.3s ease-in-out;
@@ -1828,45 +1854,51 @@ p:last-child {
   position: absolute;
   top: 45%;
   width: 100%;
+  margin: 0;
   text-align: center;
-  font-size: 1.6em;
-  font-weight: 700;
+  font-size: 2.5em;
+  font-weight: 400;
   color: white;
-  text-shadow: -2px 0 #1f2f44, 0 2px #1f2f44, 2px 0 #1f2f44, 0 -2px #1f2f44;
+  text-shadow:2px 2px 3px rgba(0, 0, 0, .7);
   text-decoration: none;
+  z-index: 10;
 }
-
+.sol{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.container h2 {
+  margin: 0 !important;
+}
+.text h2 {
+  font-size: 1.5em;
+  margin-bottom:0px;
+}
 .text {
   display: none;
   opacity: 0;
   top: 0;
   width: 320px;
   height: 320px;
-  border: solid #1f2f44;
+  align-items: center;
+  justify-content: space-evenly;
   border-radius: 10%;
   position: absolute;
   color: white;
   font-weight: 300;
-  font-size: 1.3em;
+  font-size: .3em;
   line-height: 1.5em;
-  flex-wrap: wrap;
-  padding: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  flex-direction: column;
+  padding: 0 5px;
   text-shadow: 2px 2px 4px #000000;
-  background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
-  padding-top: 50px;
-  transition: all 3s ease-in-out;
-}
-.service-name-btn{
-  display: none;
-  position: absolute;
-  top: 10px;
-  left: 20%;
-  font-size: 1.6em;
-  background-color: #21ba45;
-  color: white; 
-  border: none;
+  animation: fadeIn 1s;
+  z-index: 10;
 }
 
 .container:hover .service-img {
@@ -1874,11 +1906,37 @@ p:last-child {
   height: 320px;
   border-radius: 10%;
   border: 0;
+  transition: all 0.3s ease-in-out;
+}
+.container:hover .sol {
+  background-color: rgba(0, 0, 0, .7);
+  width: 320px;
+  height: 320px;
+  border-radius: 10%;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.service-main-btn {
+  padding: 10px 0 2px 0;
+}
+.container:hover {
+  transition: all 0.3s ease-in-out !important;
 }
 .container:hover .text {
   display: flex;
   opacity: 1;
+  font-size: 1.3em;
 }
+/* .container:hover .sol {
+ background-color: rgba(0, 0, 0, .7);
+ width: 320px;
+ height: 320px;
+ 
+ border-radius: 10%;
+ border: 0;
+ transition: all 0.3s ease-in-out;
+} */
 .container:hover .service-name {
   /*color: #21ba45;
   top: 10px;
