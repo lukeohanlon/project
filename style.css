@@ -2122,7 +2122,7 @@ text-align: center;
   height: 40px;
   width: 40px;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 14 !important;
   transition: all 0.2s ease-in-out;
 }
 .scroll-btn:active {
