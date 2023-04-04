@@ -244,7 +244,7 @@ button {
   box-shadow: 1px 1px 5px rgba(0, 0, 0);
 }
 
-.card {
+.card1 {
   color: #fff;
   width: 60%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -255,13 +255,13 @@ button {
   animation: fadeIn 1.5s;
 }
 
-.card-heading {
+.card-heading1 {
   border-bottom: #94949480 1px solid;
   width: fit-content;
   font-size: 4em;
 }
 
-.card-content {
+.card-content1 {
   font-size: 1.6em;
 }
 
@@ -1431,7 +1431,7 @@ p:last-child {
     margin-top: 15%;
   }
 
-  .card {
+  .card1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1440,7 +1440,7 @@ p:last-child {
     width: 80%;
   }
 
-  .card-content {
+  .card-content1 {
     font-size: 1.6em;
     text-align: center;
   }
@@ -1516,7 +1516,7 @@ p:last-child {
     margin-top: 20%;
   }
 
-  .card {
+  .card1 {
     color: #fff;
     width: 60%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -1525,14 +1525,14 @@ p:last-child {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   }
 
-  .card-heading {
+  .card-heading1 {
     border-bottom: #94949480 1px solid;
     width: fit-content;
     font-size: 3em;
     text-align: center;
   }
 
-  .card-content {
+  .card-content1 {
     font-size: 1.6em;
   }
 
@@ -1619,19 +1619,19 @@ p:last-child {
     display: none;
   }
 
-  .card {
+  .card1 {
     width: 90%;
     text-align: center;
     margin-top: 20%;
   }
 
-  .card-heading {
+  .card-heading1 {
     border-bottom: #94949480 1px solid;
     width: fit-content;
     font-size: 2.5em;
   }
 
-  .card-content {
+  .card-content1 {
     font-size: 1.4em;
   }
 
