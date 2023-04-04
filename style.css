@@ -2033,18 +2033,6 @@ text-align: center;
   background-size: cover;
   padding-top: 400px;
 }
-#test-mobile {
-  display: none;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url('media/swift banner.webp');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 300px;
-}
 
 .test-overlay {
   background-color: rgba(0, 0, 0, 0.4);
@@ -2148,12 +2136,8 @@ text-align: center;
   #quote-wrap-mobile {
     display: flex !important;
   }
-  #test {
-    display: none !important;
-  }
-  #test-mobile {
-    display: flex !important;
-  }
+ 
+
   .work-banner-mobile {
     display: flex !important;
   }
