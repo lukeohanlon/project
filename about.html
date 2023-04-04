@@ -42,8 +42,10 @@
       <a class="item" href="work.html">Work</a>
       <a class="item" href="services.html">Services</a>
       <a class="item" href="Testimonials.html">Testimonials</a>
-      <a class="item" href="contact.html">Contact</a>
-      <button class="phone-menu">Call Us <i class="phone icon"></i></button>
+      <a class="item" href="tel:0871234567">Contact</a>
+      <button class="phone-menu" aria-label="phone-button">
+        Call Us <i class="phone icon"></i>
+      </button>
     </div>
 
     <div id="about" class="pusher">
@@ -57,13 +59,18 @@
           <a class="menu-item" href="Testimonials.html">Testimonials</a>
           <a class="menu-item" href="contact.html">Contact</a>
           <a class="menu-item-call" href="tel:0871234567"
-            ><button onclick="" class="phone-menu nav-call-btn">
+            ><button
+              onclick=""
+              class="phone-menu nav-call-btn"
+              aria-label="phone-button"
+            >
               Call Us
               <span class="iphone"><i class="phone icon"></i></span></button
           ></a>
         </div>
         <button
           class="mobile-menu-btn"
+          aria-label="mobile-menu-button"
           onclick="$('.ui.sidebar').sidebar('toggle')"
         >
           <i class="bars icon"></i>
@@ -137,7 +144,7 @@
 
             <p>Need more information? Get a free quote from us today.</p>
             <a href="contact.html"
-              ><button class="phone-menu work-button">
+              ><button class="phone-menu work-button" aria-label="phone-button">
                 Get a Free Quote
               </button></a
             >
@@ -218,7 +225,7 @@
           </div>
         </div>
         <div class="scroll-btn-container">
-          <button id="scroll-btn" class="scroll-btn">
+          <button id="scroll-btn" class="scroll-btn" aria-label="scroll-button">
             <i class="angle up icon"></i>
           </button>
         </div>
@@ -262,7 +269,6 @@
             <div class="footer-content-bottom">Group F © | 2023</div>
           </div>
         </footer>
-        </div>
       </div>
     </div>
   </body>
