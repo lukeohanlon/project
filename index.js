@@ -2,11 +2,8 @@
 let modalContent = document.getElementById('modal-txt')
 let modalChoice = ''
 showModal = (e) => {
-  console.log(texts)
-  // modalChoice.style.display = "none"
   var modalChoice = document.getElementById(e)
   
-  console.log(modalChoice)
   modalChoice.style.display = "flex"
   modal.style.opacity = "1"
   modal.style.zIndex = "15"
@@ -32,8 +29,6 @@ if (document.getElementById('home') != null) {
     if (sliCount <= 3) {
       const sliderWidth = slide.clientWidth
       slideCont.scrollLeft += sliderWidth
-      console.log(sliCount)
-      // sliCount++
     } else {
       const sliderWidth = slide.clientWidth
       slideCont.scrollLeft -= sliderWidth * 5
@@ -55,7 +50,6 @@ if (document.getElementById('home') != null) {
     const slideWidth = slide.clientWidth
     slideCont.scrollLeft -= slideWidth
   })
-  // let modalContent = document.getElementById('modal-txt')
 
 function popUp() {
   var popup = document.getElementById('myPopup')
@@ -66,18 +60,11 @@ function popUp() {
 }
 
 let texts = document.getElementsByClassName('modal-txt')
-console.log(texts)
-// let modalChoice = ''
 let modal = document.getElementById('modal')
 let modalBox = document.getElementById('modal-box')
-// let modalChoice = ""
-// let x = 'quote-btn';
 showModal = (e) => {
-  console.log(texts)
-  // modalChoice.style.display = "none"
   var modalChoice = document.getElementById(e)
-  
-  console.log(modalChoice)
+
   modalChoice.style.display = "flex"
   modal.style.opacity = "1"
   modal.style.zIndex = "15"
@@ -87,11 +74,9 @@ closeModal = () => {
   [].forEach.call(texts, (text) => {
     text.style.display = "none"
   })
-  
   modal.style.opacity = "0"
   modal.style.zIndex = "1"
   modalBox.style.transform = "translate(-100%)"
-  // modalContent.style.display = 'none'
 }
 }
 
@@ -116,8 +101,6 @@ if (document.getElementById('contact')) {
   })
 
   var form = document.getElementById('f')
-
-  
 
   function sendSuccess() {
     e.preventDefault()
@@ -162,13 +145,10 @@ if (document.getElementById('about') != null) {
   var sliCount = 0
   const sliderCont = document.querySelector('.about-slider')
   const slider = document.querySelector('#sli-img')
-  console.log('hi')
   startSlider2 = () => {
     if (sliCount <= 10) {
       const sliderWidth = slider.clientWidth
       sliderCont.scrollLeft += sliderWidth
-      console.log(sliCount)
-      // sliCount++
     } else {
       const sliderWidth = slider.clientWidth
       sliderCont.scrollLeft -= sliderWidth * 10
