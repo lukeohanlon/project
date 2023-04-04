@@ -40,7 +40,7 @@
       <a class="item" href="services.html">Services</a>
       <a class="active item" href="Testimonials.html">Testimonials</a>
       <a class="item" href="contact.html">Contact</a>
-      <button class="phone-menu">Call Us <i class="phone icon"></i></button>
+      <button class="phone-menu" aria-label="phone-button">Call Us <i class="phone icon"></i></button>
     </div>
     <div id="testimonials" class="pusher">
       <div class="top-nav">
@@ -53,13 +53,14 @@
           <a class="menu-item active" href="Testimonials.html">Testimonials</a>
           <a class="menu-item" href="contact.html">Contact</a>
           <a class="menu-item-call" href="tel:0871234567"
-            ><button onclick="" class="phone-menu nav-call-btn">
+            ><button aria-label="phone-button" class="phone-menu nav-call-btn">
               Call Us
               <span class="iphone"><i class="phone icon"></i></span></button
           ></a>
         </div>
         <button
           class="mobile-menu-btn"
+          aria-label="mobile-menu-button"
           onclick=" $('.ui.sidebar').sidebar('toggle')"
         >
           <i class="bars icon"></i>
@@ -239,7 +240,7 @@
         </div>
       </div>
       <div class="scroll-btn-container">
-        <button id="scroll-btn" class="scroll-btn"><i class="angle up icon"></i></button>
+        <button id="scroll-btn"  aria-label="scroll-button" class="scroll-btn"><i class="angle up icon"></i></button>
       </div>
       <!-- FOOTER -->
       <footer>

@@ -43,7 +43,7 @@
       <a class="active item" href="services.html">Services</a>
       <a class="item" href="Testimonials.html">Testimonials</a>
       <a class="item" href="contact.html">Contact</a>
-      <button class="phone-menu">Call Us <i class="phone icon"></i></button>
+      <button aria-label="phone-button" class="phone-menu">Call Us <i class="phone icon"></i></button>
     </div>
     <div id="services" class="pusher">
       <div class="top-nav">
@@ -58,13 +58,14 @@
           <a class="menu-item" href="Testimonials.html">Testimonials</a>
           <a class="menu-item" href="contact.html">Contact</a>
           <a class="menu-item-call" href="tel:0871234567"
-            ><button onclick="" class="phone-menu nav-call-btn">
+            ><button aria-label="phone-button" class="phone-menu nav-call-btn">
               Call Us
               <span class="iphone"><i class="phone icon"></i></span></button
           ></a>
         </div>
         <button
           class="mobile-menu-btn"
+          aria-label="mobile-menu-button"
           onclick=" $('.ui.sidebar').sidebar('toggle')"
         >
           <i class="bars icon"></i>
@@ -90,14 +91,11 @@
             grow plants that give you a beautiful environment and design a
             practical layout that allows you to use your garden how you want.
             <a href="#land"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2 class="service-name">Landscaping</h2>
-         
-         
         </div>
-
         <div class="container">
           <div class="sol"></div>
           <img
@@ -110,7 +108,7 @@
             Roof cleaning is the process of removing algae,mold, mildew, lichen
             and moss from roofs. Also cleaning oxidation on metal roofs.
             <a href="#roof"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2 class="service-name">Roof Cleaning</h2>
@@ -128,7 +126,7 @@
             including: tarmacadam, imprinted, concrete, cobblelock brick, block
             paving, monoblock driveway cleanings.
             <a href="#driveway"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
             <h2 class="service-name">Driveway Cleaning</h2>
@@ -145,7 +143,7 @@
             If your gutters have started overflowing it’s time for a clean. We
             can unblock everything from your gutters.
             <a href="#gutter"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2 class="service-name">Gutter Cleaning</h2>
@@ -165,7 +163,7 @@
             effort to filling in all the bare patches. The garden grass is
             installed in a short space of time, transforming your garden.
             <a href="#roll"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2 class="service-name">Rolled Grass</h2>
@@ -183,7 +181,7 @@
             We provide all types of tree surveys, including Arboricultural
             Impact Assessments and Tree Constraints Plan.
             <a href="#tree"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2 class="service-name">Tree Surgeon</h2>
@@ -203,7 +201,7 @@
             your home's PVC can really brighten up your property and improve
             curb appeal.
             <a href="#pvc"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2  class="service-name">PVC Cleaning</h2>
@@ -221,7 +219,7 @@
             Deep cleaning involves a thorough scrubbing of all surfaces, even
             hard-to-reach areas.
             <a href="#wash"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2  class="service-name">House Wash</h2>
@@ -240,7 +238,7 @@
             maintain your block paving on a regular basis. Our services include
             block paving cleaning, re-sanding and sealing.
             <a href="#paving"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2  class="service-name">Block Paving</h2>
@@ -258,7 +256,7 @@
             We provide hedge trimming and hedge maintenance and our hedge
             removal services.
             <a href="#trimming"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2  class="service-name">Trimming</h2>
@@ -276,7 +274,7 @@
             improving a garden. We have extensive knowledge of which plants are
             most likely to succeed in gardens in Ireland.
             <a href="#planting"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2  class="service-name">Planting</h2>
@@ -293,7 +291,7 @@
             We offer services such as weeding, pruning of shrubs and hedges,
             mulching, lawn care to keep it in great condition, cleaning.
             <a href="#garden"class="service-main-btn"
-            ><button class="main-btn">Learn More</button></a
+            ><button  aria-label="more-button" class="main-btn">Learn More</button></a
           >
           </div>
           <h2  class="service-name">Garden Cleaning</h2>
@@ -404,7 +402,7 @@
       </div>
 
       <div class="scroll-btn-container">
-        <button id="scroll-btn" class="scroll-btn">
+        <button id="scroll-btn" aria-label="scroll-button" class="scroll-btn">
           <i class="angle up icon"></i>
         </button>
       </div>
