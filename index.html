@@ -8,53 +8,18 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
-      onload="this.media='all'"
+      defer
     />
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
-      onload="this.media='all'"
+      defer
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"
-      onload="this.media='all'"
+      defer
     ></script>
-    <style>
-      *,
-      :after,
-      :before {
-        -webkit-box-sizing: inherit;
-        box-sizing: inherit;
-      }
-
-      html {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-
-      h1:last-child,
-      h2:last-child,
-      h3:last-child,
-      h4:last-child,
-      h5:last-child {
-        margin-bottom: 0;
-      }
-
-      p {
-        margin: 0 0 1em;
-        line-height: 1.4285em;
-      }
-    </style>
-
-    <link
-      rel="preload"
-      href="styles.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer />
     <link
@@ -306,7 +271,10 @@
           <h3 class="section-heading">Our Work</h3>
         </div>
         <div class="info-section">
-          <img class="info-image-left info-img" src="./media/landscaper.webp" />
+          <img
+            class="info-image-left info-img "
+            src="./media/landscaper.webp"
+          />
           <div class="info-content-right info-content">
             <h3 class="info-heading">Maintenance</h3>
             <p class="info-text">
@@ -318,11 +286,7 @@
               your home. Get in touch today or click the button below to see how
               we can help.
             </p>
-            <a href="work.html"
-              ><button aria-label="more-button" class="main-btn">
-                See More
-              </button></a
-            >
+            <a href="work.html"><button  aria-label="more-button" class="main-btn">See More</button></a>
           </div>
         </div>
         <div class="info-section info-right">
