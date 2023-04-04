@@ -552,7 +552,7 @@ font-size: .7em;
   color: #21ba45;
 }
 
-#quote-btn {
+.quote-btn {
   position: relative;
   color: #fff;
   background-color:#1f2f44;
@@ -561,7 +561,7 @@ font-size: .7em;
   border: #fff 2px solid;
   transition: all 0.2s ease-in-out;
 }
-#quote-btn:active {
+.quote-btn:active {
   position: relative;
   color: #fff;
   background-color: #0b591dd8;
@@ -1759,7 +1759,7 @@ p:last-child {
 }
 
 @media screen and (max-width: 400px) {
-  #quote-btn {
+  .quote-btn {
     padding: 10px 30px;
   }
 
