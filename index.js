@@ -81,6 +81,13 @@ closeModal = () => {
 }
 
 if (document.getElementById('contact')) {
+  function popUp() {
+    var popup = document.getElementById('myPopup')
+    popup.classList.toggle('show')
+    setTimeout(() => {
+      popup.classList.toggle('show')
+    },1500)
+  }
   const inputs = document.querySelectorAll('.input')
 
   function focusFunc() {
