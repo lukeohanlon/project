@@ -267,3 +267,223 @@ ul {
   float: right;
   background-color: #21ba45ab;
 }
+
+@media screen and (max-width: 1100px) {
+    .info-text {
+      font-size: 0.8em;
+    }
+    .text-block {
+      width: 60%;
+    }
+    .top-nav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 12px 12px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 17px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  
+  @media screen and (max-width: 960px) {
+    .top-nav .mobile-menu-btn {
+      display: flex;
+      color: #fff;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      padding: 14px;
+      text-decoration: none;
+      font-size: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .top-nav .menu-top {
+      display: none;
+    }
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 80%;
+}
+}
+
+@media screen and (max-width: 760px) {
+    .quote-heading {
+      font-size: 2em;
+    }
+  
+    .services-item {
+      text-align: center;
+    }
+    .text-block {
+      width: 80%;
+    }
+  
+    #form-wrap {
+      margin-top: 20%;
+    }
+  
+    .card1 {
+      color: #fff;
+      width: 60%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px 40px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+  
+    .card-heading1 {
+      border-bottom: #94949480 1px solid;
+      width: fit-content;
+      font-size: 3em;
+      text-align: center;
+    }
+  
+    .card-content1 {
+      font-size: 1.6em;
+    }
+  
+    .banner-btn {
+      float: right;
+    }
+  
+    .banner-btn:hover {
+      float: right;
+      background-color: #018856;
+    }
+}
+
+@media screen and (max-width: 608px) {
+    /* .info {
+      width: 80vw !important;
+      margin: 10px !important;
+    } */
+    
+    p:last-child {
+      margin-bottom: 15px !important;
+    }
+  
+    .info div {
+      padding: 0 !important;
+    }
+  
+    .contact-container {
+      padding: 3em;
+    }
+  
+    .contact-container-overlay {
+      padding: 3em;
+    }
+  
+    .quote-heading {
+      font-size: 1.4em;
+    }
+  
+    .long {
+      font-size: 1.8em;
+      width: 90%;
+    }
+    .slide h2 {
+      font-size: 1.5em;
+      margin: 5px;
+    }
+    .slide p {
+      font-size: 1.2em;
+      margin: 5px;
+    }
+  
+    .testimonial-btn {
+      font-size: 1.8em;
+      border: 1px solid #fff;
+      padding: 10px 30px;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+  
+    .testimonial-btn:active {
+      background-color: #21ba4564;
+      color: #fff;
+      border-radius: 50px;
+      font-size: 1.6rem;
+      border: 1px solid #fff;
+      padding: 10px 30px;
+      box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.6);
+    }
+  
+    #form-wrap {
+      margin-top: 30%;
+    }
+  
+    .services-content-2 {
+      display: none;
+    }
+  
+    .card1 {
+      width: 90%;
+      text-align: center;
+      margin-top: 20%;
+    }
+  
+    .card-heading1 {
+      border-bottom: #94949480 1px solid;
+      width: fit-content;
+      font-size: 2.5em;
+    }
+  
+    .card-content1 {
+      font-size: 1.4em;
+    }
+  
+    #recycle-banner h3 {
+      font-size: 6vw;
+      color: #fff;
+      width: 100%;
+      text-align: center !important;
+      margin: 0;
+    }
+    #rechead {
+      display: flex;
+      justify-content: center;
+  
+    }
+  
+    #recycle-banner {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px 0;
+    }
+  
+    
+  }
+  
+  @media (max-width: 480px) {
+    .modal-box p{
+      font-size: .7em;
+        padding:0 !important;
+  
+      }
+      .modal-box {
+         
+          padding: 20px 20px !important;
+          /* margin: 0 !important; */
+          width: 95% !important;
+        }
+
+    .icon {
+      width: 23px;
+    }
+  
+    .mobile-hide {
+      display: none;
+    }    
+  }
