@@ -1,0 +1,277 @@
+body,
+html {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+input {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-weight: 300;
+}
+button, a {
+  cursor: pointer;
+  
+}
+textarea.input{
+  font-family: 'Oswald', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 1.3em;
+}
+ul {
+  list-style: none;
+  margin: 0 20px 0 20px;
+  padding-inline-start: 0px;
+}
+
+/* ***************** ALL | Navigation Mobile |  *****************   Luke */
+
+.ui.sidebar.inverted.right.vertical.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ui.inverted.menu .active.item {
+  color: #21ba45 !important;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.phone-menu {
+  color: #fff;
+  background-color: #21ba45;
+  padding: 12px 14px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.iphone {
+  padding-left: 5px;
+}
+
+.phone-btn {
+  font-size: 200px;
+}
+
+.nav-call-btn {
+  margin-left: 20px;
+  font-size: 1.2em;
+}
+.nav-call-btn:active {
+  margin-left: 33px !important;
+}
+
+.ui.inverted.menu .item {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+button {
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+}
+
+.phone-menu:active {
+  color: #fff;
+  background-color: #21ba45;
+  margin: 3px;
+  font-size: 1em;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* ***************** ALL | Navigation Mobile | END *****************   Luke */
+
+/* ***************** ALL | Navigation Main | *****************   Luke */
+
+.top-nav {
+  position: absolute;
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 11;
+}
+
+.logo {
+  width: 130px;
+  
+}
+.logo-link {
+  padding: 5px 0 5px 20px !important;
+}
+
+.logo-menu {
+  width: 180px;
+  border-bottom: #8b89897b 1px solid;
+}
+
+.top-nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 13px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 17px;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-nav a.menu-item {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.menu-item-call {
+  font-size: 1.1em !important;
+  font-weight: 300;
+  padding: 0 !important;
+  margin: 0 0 0 10px;
+  float: none !important;
+}
+
+.active {
+  font-size: 1.4em;
+  border-bottom: 1px solid #21ba45;
+  border-radius: 0px !important;
+}
+
+.top-nav .mobile-menu-btn {
+  display: none;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-nav .menu-top .menu-item:hover {
+  background-color: #21ba45a9;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+  background-color: #21ba45;
+  color: white;
+}
+
+.main-btn {
+  background-color: #21ba45;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 1em;
+  font-family: 'Oswald', sans-serif;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-in-out;
+  z-index: 13;
+}
+.main-btn:active {
+  background-color: #21ba45;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 18px;
+  margin: 1px 2px 1px 0;
+  box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.6);
+}
+/* Katherine */
+.main-btn:hover {
+  background-color: #25dc50;
+}
+/* ***************** ALL | Navigation Main | END *****************   Luke */
+
+/* ***************** HOME | Banner | *****************   Luke */
+
+#banner-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('./media/swift-banner.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-position: center;
+}
+#banner-wrap-mobile {
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('./media/swift-banner-small.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-position: center;
+  z-index: 1000;
+}
+
+.banner-overlay {
+  width: 100%;
+  min-width: 322px;
+  height: 100vh;
+  min-height: 500px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0);
+}
+
+.card1 {
+  color: #fff;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  animation: fadeIn 1.5s;
+}
+
+.card-heading1 {
+  border-bottom: #94949480 1px solid;
+  width: fit-content;
+  font-size: 4em;
+}
+
+.card-content1 {
+  font-size: 1.6em;
+}
+
+.banner-btn {
+  float: right;
+  font-size: 1.3em;
+  letter-spacing: .05em;
+}
+
+.banner-btn:hover {
+  float: right;
+  background-color: #21ba45ab;
+}
