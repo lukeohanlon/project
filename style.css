@@ -4,6 +4,7 @@ html {
   width: 100%;
   font-family: 'Lato', sans-serif;
   font-weight: 200;
+  margin: 0 !important;
 }
 label{
   display: none !important;
@@ -103,7 +104,7 @@ button {
 .top-nav {
   position: absolute;
   display: flex;
-  padding: 0 40px;
+  /* padding: 0 40px; */
   align-items: center;
   justify-content: space-between;
   width: 100%;
