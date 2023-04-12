@@ -118,6 +118,17 @@ if (document.getElementById('contact')) {
 
 }
 
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginRight = "250px";
+  document.getElementById("modal-overlay").style.display = "flex !important"
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
+}
+
 /* ******** Anna ********* */
 
 let mybutton = document.getElementById('scroll-btn')
