@@ -120,6 +120,7 @@ button {
 }
 .logo-link {
   padding: 5px 0 5px 20px !important;
+  margin-left: 20px;
 }
 
 .logo-menu {
@@ -167,7 +168,9 @@ button {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
-
+.menu-top {
+  margin-right: 40px;
+}
 .top-nav .menu-top .menu-item:hover {
   background-color: #21ba45a9;
   border-radius: 10px;
