@@ -1,4 +1,43 @@
-i.icon.sidebar:before {
+@font-face {
+    font-family: 'outline-icons';
+    src: url("fonts/outline-icons.eot");
+    src: url("fonts/outline-icons.eot?#iefix") format('embedded-opentype'), url("fonts/outline-icons.woff2") format('woff2'), url("fonts/outline-icons.woff") format('woff'), url("fonts/outline-icons.ttf") format('truetype'), url("fonts/outline-icons.svg#icons") format('svg');
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+  }
+@font-face {
+    font-family: 'brand-icons';
+    src: url("./fonts/brand-icons.eot");
+    src: url("./fonts/brand-icons.eot");
+    src: url("./fonts/brand-icons.eot?#iefix") format('embedded-opentype'), url("fonts/brand-icons.woff2") format('woff2'), url("fonts/brand-icons.woff") format('woff'), url("fonts/brand-icons.ttf") format('truetype'), url("fonts/brand-icons.svg#icons") format('svg');
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+  }
+
+@font-face {
+    font-family: 'Icons';
+    src: url("./fonts/icons.eot");
+    /* src:url("./") */
+    src: url("./fonts/icons.eot?#iefix") format('embedded-opentype'), url("fonts/icons.woff2") format('woff2'), url("fonts/icons.woff") format('woff'), url("fonts/icons.ttf") format('truetype'), url("fonts/icons.svg#icons") format('svg');
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: inherit;
+    text-transform: none;
+  }
+  i.icon.facebook {
+    font-family: 'brand-icons';
+  }
+  i.icon.whatsapp {
+    font-family: 'brand-icons';
+  }
+  i.icon.sidebar:before {
     content: "\f0c9";
   }
   .ui.vertical.sidebar.menu > .item:first-child:before {
@@ -2715,16 +2754,7 @@ background-color:#000;
              Icon
 *******************************/
 
-@font-face {
-    font-family: 'Icons';
-    src: url("./themes/default/assets/fonts/icons.eot");
-    src: url("./themes/default/assets/fonts/icons.eot?#iefix") format('embedded-opentype'), url("./themes/default/assets/fonts/icons.woff2") format('woff2'), url("./themes/default/assets/fonts/icons.woff") format('woff'), url("./themes/default/assets/fonts/icons.ttf") format('truetype'), url("./themes/default/assets/fonts/icons.svg#icons") format('svg');
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-decoration: inherit;
-    text-transform: none;
-  }
+
   
   i.icon {
     display: inline-block;
@@ -2916,6 +2946,7 @@ background-color:#000;
     color: #FFFFFF;
   }
   
+ 
   /*-------------------
          Colors
   --------------------*/
@@ -2990,14 +3021,106 @@ i.icons {
   font-size: 1em;
 }
 
+ 
 
-@font-face {
-    font-family: 'brand-icons';
-    src: url("./themes/default/assets/fonts/brand-icons.eot");
-    src: url("./themes/default/assets/fonts/brand-icons.eot?#iefix") format('embedded-opentype'), url("./themes/default/assets/fonts/brand-icons.woff2") format('woff2'), url("./themes/default/assets/fonts/brand-icons.woff") format('woff'), url("./themes/default/assets/fonts/brand-icons.ttf") format('truetype'), url("./themes/default/assets/fonts/brand-icons.svg#icons") format('svg');
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-decoration: inherit;
-    text-transform: none;
+
+i.icon.loading {
+    height: 1em;
+    line-height: 1;
   }
+  
+  i.icon.loading {
+    -webkit-animation: icon-loading 2s linear infinite;
+    animation: icon-loading 2s linear infinite;
+  }
+  
+  @-webkit-keyframes icon-loading {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes icon-loading {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*******************************
+               States
+  *******************************/
+  
+  i.icon.facebook:before {
+    content: "\f09a";
+  }
+  
+  i.icon.facebook.f:before {
+    content: "\f39e";
+  }
+
+  i.icon.whatsapp:before {
+    content: "\f232";
+  }
+  
+  i.icon.whatsapp.square:before {
+    content: "\f40c";
+  }
+  i.icon.star:before {
+    content: "\f005";
+  }
+  
+  i.icon.star.half:before {
+    content: "\f089";
+  }
+  i.icon.hourglass.start:before {
+    content: "\f251";
+  }
+
+  i.icon.envelope:before {
+    content: "\f0e0";
+  }
+  
+  i.icon.envelope.open:before {
+    content: "\f2b6";
+  }
+  
+  i.icon.envelope.square:before {
+    content: "\f199";
+  }
+  
+  i.icon.phone:before {
+    content: "\f095";
+  }
+  
+  i.icon.phone.square:before {
+    content: "\f098";
+  }
+  
+  i.icon.phone.volume:before {
+    content: "\f2a0";
+  }
+
+  i.icon.hover {
+    opacity: 1 !important;
+  }
+  
+  i.icon.active {
+    opacity: 1 !important;
+  }
+  
+  i.emphasized.icon {
+    opacity: 1 !important;
+  }
+  
+  i.disabled.icon {
+    opacity: 0.45 !important;
+  }
+  
