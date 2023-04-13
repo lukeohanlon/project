@@ -2093,6 +2093,7 @@ text-align: center;
   height: 400px;
   position: absolute;
 }
+
 .test-banner {
   width: 100%;
   position: absolute;
@@ -2105,6 +2106,7 @@ text-align: center;
   justify-content: center;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
+
 .test-header {
   font-size: 4em;
   height: 50%;
@@ -2129,7 +2131,7 @@ text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-  margin: 60px 0;
+  margin: 20px 0;
   padding: 20px;
 }
 
