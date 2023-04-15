@@ -54,10 +54,10 @@ ul {
 .phone-menu {
   color: #fff;
   background-color: #21ba45;
-  padding: 12px 14px;
-  font-size: 1.1em;
+  padding: 10px 14px;
+  font-size: .9em;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -78,9 +78,9 @@ ul {
 }
 
 .ui.inverted.menu .item {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 button {
@@ -1426,6 +1426,10 @@ padding-left: 30px !important;
 }
 .work-button {
   font-size: 1.25em;
+  padding: 10px 14px;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 50px;
 }
 .work-button:hover {
   background-color: #21ba45ab;
