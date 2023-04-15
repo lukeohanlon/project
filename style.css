@@ -1198,7 +1198,15 @@ p:last-child {
 .footer-icon {
   color: #21ba45;
 }
-
+.contact-footer {
+  
+  display: flex !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+.contact-footer  a{
+padding-left: 30px !important;
+}
 /* ***************** FOOTER END *****************   Luke */
 
 /* ***************** ABOUT ***************** Katherine */
@@ -2122,7 +2130,7 @@ text-align: center;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-image: url('media/swift-banner.webp');
+  background-image: url('media/swift-banner-1.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
