@@ -781,6 +781,34 @@ font-size: .7em;
   border-color: #21ba45 transparent transparent transparent;
 }
 
+.popup .popuptext2 {
+  visibility: hidden;
+  font-size: 1em;
+  width: 125px;
+  font-weight: 400;
+  background-color: #21ba45;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 2px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -65px;
+}
+
+.popup .popuptext2::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #21ba45 transparent transparent transparent;
+}
+
 .popup .show {
   visibility: visible;
   -webkit-animation: fade 0.2s ease-in-out;
