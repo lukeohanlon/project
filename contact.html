@@ -52,7 +52,9 @@
     </div>
     <div id="contact" class="pusher">
       <div class="top-nav">
-        <a href="index.html" class="logo-link" ><img class="logo" src="./media/4.webp" /></a>
+        <a href="index.html" class="logo-link"
+          ><img class="logo" src="./media/4.webp"
+        /></a>
         <div class="menu-top">
           <a class="menu-item" href="index.html">Home</a>
           <a class="menu-item" href="about.html">About</a>
@@ -109,12 +111,13 @@
                 <div class="contact-icons-wrap">
                   <p>Connect with us:</p>
                   <div class="contact-icons">
-                    <a  onclick="popUp()" class="popup" href="javascript:void(0)">
+                    <a
+                      onclick="popUp()"
+                      class="popup"
+                      href="javascript:void(0)"
+                    >
                       <span class="popuptext" id="myPopup">Comming Soon!</span>
-                      <i
-                       
-                        class="facebook icon contact-icon"
-                      ></i>
+                      <i class="facebook icon contact-icon"></i>
                     </a>
                     <a href="https://wa.me/+353871234567">
                       <i class="whatsapp icon contact-icon"></i>
@@ -137,6 +140,7 @@
                       name="name"
                       class="input"
                       placeholder="Name"
+                      required="required" 
                     />
                   </div>
                   <div class="input-container">
@@ -145,11 +149,15 @@
                       name="email"
                       class="input"
                       placeholder="Email"
+                      required="required" 
                     />
                   </div>
                   <div class="input-container">
                     <input
                       type="tel"
+                      pattern="\d*"
+                      title="Letters are not a number dummy!"
+                      required="required" 
                       name="phone"
                       class="input"
                       placeholder="Phone"
@@ -160,6 +168,7 @@
                       name="message"
                       class="input"
                       placeholder="Message"
+                      required="required" 
                     ></textarea>
                   </div>
                   <input
@@ -194,11 +203,13 @@
                 <div class="contact-icons-wrap">
                   <p>Connect with us:</p>
                   <div class="contact-icons">
-                    <a  onclick="popUp()" class="popup" href="javascript:void(0)">
+                    <a
+                      onclick="popUp()"
+                      class="popup"
+                      href="javascript:void(0)"
+                    >
                       <span class="popuptext" id="myPopup">Comming Soon!</span>
-                      <i
-                        class="facebook icon contact-icon"
-                      ></i>
+                      <i class="facebook icon contact-icon"></i>
                     </a>
                     <a href="https://wa.me/+353871234567">
                       <i class="whatsapp icon contact-icon"></i>
@@ -299,9 +310,7 @@
               ><i class="envelope footer-icon icon"></i> Email</a
             >
             <span class="popuptext" id="myPopup">Comming Soon!</span>
-            <a onclick="popUp()"  href="javascript:void(0)"
-              >
-              
+            <a onclick="popUp()" href="javascript:void(0)">
               <i class="facebook footer-icon icon"></i> Facebook</a
             >
             <a href="https://wa.me/+353871234567"
