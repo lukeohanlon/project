@@ -1664,7 +1664,7 @@ padding-left: 30px !important;
   } */
   
   p:last-child {
-    margin-bottom: 15px !important;
+    /* margin-bottom: 15px !important; */
   }
 
   .info div {
