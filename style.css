@@ -333,6 +333,9 @@ font-size: .7em;
  
 
 }
+.modal-btn {
+  font-size: .7em !important;
+}
 
 .modal-txt {
   width: 100%;
