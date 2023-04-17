@@ -130,6 +130,7 @@ function closeNav() {
 }
 
 /* ******** Anna ********* */
+//when a user scroll 20px down the button becomes visible. event added to click on button to get to the top of the page
 
 let mybutton = document.getElementById('scroll-btn')
 window.onscroll = function (e) {
