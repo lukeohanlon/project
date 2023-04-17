@@ -1915,6 +1915,7 @@ padding-left: 30px !important;
   padding-right: 10px;
 }
 
+/* main container*/ 
 #services-main {
   position: relative;
   width: 100%;
@@ -1933,6 +1934,7 @@ padding-left: 30px !important;
   --bs-gutter-x: 0rem !important;
 }
 
+/*ser-   header's divs*/
 .ser-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -1956,7 +1958,7 @@ padding-left: 30px !important;
   color: white;
   z-index: 2;
 }
-
+/*container for circles*/
 .container {
   scroll-behavior: smooth;
   display: flex;
@@ -1969,6 +1971,7 @@ padding-left: 30px !important;
   transition: all 0.3s ease-in-out;
 }
 
+/*divs for images*/
 .service-img {
   width: 300px;
   height: 300px;
@@ -1978,6 +1981,8 @@ padding-left: 30px !important;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
+
+/*services titles*/
 .service-name {
   position: absolute;
   top: 40%;
@@ -1991,6 +1996,7 @@ padding-left: 30px !important;
   text-decoration: none;
   z-index: 10;
 }
+/*empty containers for hovering*/
 .sol{
   background-color: rgba(0, 0, 0, 0.35);
   border-radius: 50%;
@@ -2007,6 +2013,7 @@ padding-left: 30px !important;
   font-size: 1.7em;
   margin-bottom:0px;
 }
+/*div with short service info*/
 .text {
   display: none;
   opacity: 0;
@@ -2031,6 +2038,8 @@ padding-left: 30px !important;
 .service-main-btn {
   font-size: 1.1em;
 }
+
+/*changes when hover over*/
 
 .container:hover .service-img {
   width: 320px;
@@ -2086,6 +2095,9 @@ text-align: center;
   text-decoration: underline 2px;
 }*/
 
+
+/*section with full information*/
+
 .info-ser {
   display: block;
   font-weight: 300;
@@ -2109,6 +2121,7 @@ text-align: center;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
+/*responsiveness*/
 @media screen and (max-width: 500px) {
   .info-ser {
     margin-left: 30px;
@@ -2133,6 +2146,7 @@ text-align: center;
 
 /* ***************** Testimonials **************** */
 
+/*main container*/
 #test {
   display: flex;
   flex-direction: column;
@@ -2180,6 +2194,7 @@ text-align: center;
   text-align: center;
 }
 
+/*testimonials divs*/
 .rew {
   display: flex;
   width: 90%;
