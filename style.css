@@ -592,6 +592,7 @@ button {
   right: -75px;
   border-radius: 50%;
   position: absolute;
+  border: .6em solid #21ba45;
 }
 
 .circle.four {
@@ -627,6 +628,7 @@ button {
   height: 300px;
   top: 20px;
  left: -195px;
+ border: .9em solid #21ba45;
   z-index: 1;
   border-radius: 50%;
   position: absolute;
@@ -1872,8 +1874,9 @@ p:last-child {
 .circle.one {
   width: 180px;
   height: 180px;
-  top: 550px;
+  top: 580px ;
   right: -75px;
+  
 }
 
 .circle.five {
