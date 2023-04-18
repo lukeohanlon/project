@@ -879,17 +879,17 @@ button {
   letter-spacing: .01em;
   position: absolute;
   z-index: 1;
-  bottom: 10%;
+  bottom: 125%;
   left: 50%;
-  margin-left: -180px;
+  margin-left: -65px;
 }
 
 .popup .popuptext::after {
   content: '';
   position: absolute;
-  top: 30%;
-  left: 98%;
-  transform: rotate(-90deg);
+  top: 100%;
+  left: 50%;
+  /* transform: rotate(-90deg); */
   margin-right: 0px;
   border-width: 7px;
   border-style: solid;
@@ -1846,6 +1846,9 @@ p:last-child {
 }
 
 @media (max-width: 480px) {
+  .contact-head {
+    margin-top: 3.2em;
+  }
  
 .circle.one {
   width: 180px;
