@@ -1316,7 +1316,7 @@ p:last-child {
   color: #fff;
   padding: 2em;
   margin: 0 0 0 4em;
-  width: 30%;
+  width: 40%;
   height: fit-content;
   clip-path: polygon(100% 0, 100% 83%, 80% 100%, 0 100%, 0 0);
   font-weight: 300;
@@ -1631,12 +1631,11 @@ p:last-child {
   .test-quote {
     font-size: 1.5em;
   }
+  
   .services-item {
     text-align: center;
   }
-  .text-block {
-    width: 80%;
-  }
+ 
 
   #form-wrap {
     margin-top: 20%;
@@ -1681,10 +1680,17 @@ p:last-child {
 }
 
 @media screen and (max-width: 608px) {
-  /* .info {
-    width: 80vw !important;
-    margin: 10px !important;
-  } */
+
+  .text-block {
+    width: 90% !important;
+    height: 90%;
+    margin: 1em;
+    clip-path: polygon(100% 0, 100% 84%, 91% 100%, 0 100%, 0 0);
+    /* min-height: 800px !important; */
+  }
+  .work-history{
+    height: 720px;
+  }
   .ser-home-p {
     display: flex;
     align-items: center;
@@ -1817,6 +1823,16 @@ p:last-child {
 @media (max-width: 480px) {
   .contact-head {
     margin-top: 3.2em;
+  }
+  .text-block {
+    width: 95% !important;
+    height: 80%;
+    margin: 1em;
+    clip-path: polygon(100% 0, 100% 84%, 91% 100%, 0 100%, 0 0);
+    min-height: 750px !important;
+  }
+  .work-history{
+    min-height: 880px;
   }
  
 .circle.one {
@@ -2171,8 +2187,17 @@ p:last-child {
 }
 
 /*responsiveness*/
-@media screen and (max-width: 500px) {
- 
+@media screen and (max-width: 515px) {
+  .text-block {
+    width: 80%;
+    height: 90%;
+    margin: 1em;
+    clip-path: polygon(100% 0, 100% 84%, 91% 100%, 0 100%, 0 0);
+    min-height: 800px !important;
+  }
+  .work-history{
+    min-height: 820px;
+  }
   .info-ser {
     margin-left: 30px;
     margin-right: 30px;
