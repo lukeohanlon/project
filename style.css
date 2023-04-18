@@ -1761,7 +1761,7 @@ p:last-child {
 
   .testimonial-btn {
     font-size: 1.8em;
-    border: 1px solid #fff;
+    border: 1px solid #21ba45;
     padding: 10px 30px;
     transition: all 0.2s ease-in-out;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
@@ -1772,7 +1772,7 @@ p:last-child {
     color: #fff;
     border-radius: 50px;
     font-size: 1.6rem;
-    border: 1px solid #fff;
+    border: 1px solid #21ba45;
     padding: 10px 30px;
     box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.6);
   }
@@ -1952,7 +1952,7 @@ p:last-child {
 
   .testimonial-btn {
     font-size: 1.4rem;
-    border: 1px solid #fff;
+    border: 1px solid #21ba45;
     padding: 10px 3035x;
     transition: all 0.2s ease-in-out;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
@@ -1962,7 +1962,7 @@ p:last-child {
     color: #fff;
     border-radius: 50px;
     font-size: 1.2rem;
-    border: 1px solid #fff;
+    border: 1px solid #21ba45;
     padding: 10px 30px;
     box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.6);
   }
@@ -1994,6 +1994,7 @@ p:last-child {
   padding-right: 10px;
 }
 
+/* main container*/ 
 #services-main {
   position: relative;
   width: 100%;
@@ -2012,6 +2013,7 @@ p:last-child {
   --bs-gutter-x: 0rem !important;
 }
 
+/*ser-   header's divs*/
 .ser-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -2035,7 +2037,7 @@ p:last-child {
   color: white;
   z-index: 2;
 }
-
+/*container for circles*/
 .container {
   scroll-behavior: smooth;
   display: flex;
@@ -2048,6 +2050,7 @@ p:last-child {
   transition: all 0.3s ease-in-out;
 }
 
+/*divs for images*/
 .service-img {
   width: 300px;
   height: 300px;
@@ -2057,6 +2060,8 @@ p:last-child {
   object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
+
+/*services titles*/
 .service-name {
   position: absolute;
   top: 40%;
@@ -2086,6 +2091,7 @@ p:last-child {
   font-size: 1.7em;
   margin-bottom: 0px;
 }
+/*div with short service info*/
 .text {
   display: none;
   opacity: 0;
@@ -2110,6 +2116,8 @@ p:last-child {
 .service-main-btn {
   font-size: 1.1em;
 }
+
+/*changes when hover over*/
 
 .container:hover .service-img {
   width: 320px;
@@ -2164,6 +2172,9 @@ p:last-child {
   text-decoration: underline 2px;
 }*/
 
+
+/*section with full information*/
+
 .info-ser {
   display: block;
   font-weight: 300;
@@ -2187,6 +2198,7 @@ p:last-child {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
+/*responsiveness*/
 @media screen and (max-width: 500px) {
  
   .info-ser {
@@ -2211,6 +2223,7 @@ p:last-child {
 
 /* ***************** Testimonials **************** */
 
+/*main container*/
 #test {
   display: flex;
   flex-direction: column;
@@ -2257,6 +2270,7 @@ p:last-child {
   text-align: center;
 }
 
+/*testimonials divs*/
 .rew {
   display: flex;
   width: 90%;
