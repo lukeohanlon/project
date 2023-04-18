@@ -585,25 +585,13 @@ button {
   /* padding: 0; */
 }
 
-.circle {
-  /* border-radius: 50%; */
-  /* background: linear-gradient(135deg, transparent 20%, #21ba45); */
-  /* position: absolute; */
-  /* border: .6em solid #21ba45; */
-}
-
 .circle.one {
   width: 180px;
   height: 180px;
   top: 250px;
   right: -75px;
-}
-
-.test-overlay-full {
-  width: 100%;
-  position:fixed;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+  position: absolute;
 }
 
 .circle.four {
@@ -613,6 +601,8 @@ button {
   left: -75px;
   border: 1em solid #1f2f44;
   z-index: 1;
+  border-radius: 50%;
+  position: absolute;
 }
 .circle.five {
   width: 210px;
@@ -620,6 +610,8 @@ button {
   top: 229px;
   right: -95px;
   border: 1em solid #1f2f44;
+  border-radius: 50%;
+  position: absolute;
 }
 .circle.two {
   width: 330px;
@@ -627,6 +619,8 @@ button {
   top: -229px;
   right: 95px;
   border: 1em solid #21ba45;
+  border-radius: 50%;
+  position: absolute;
 }
 .circle.seven {
   width: 300px;
@@ -634,15 +628,15 @@ button {
   top: 20px;
  left: -195px;
   z-index: 1;
+  border-radius: 50%;
+  position: absolute;
 }
-/* .circle.eight {
-  width: 300px;
-  height: 300px;
-  bottom: -150px;
-  left: 10%;
-  z-index: 1;
-  border: 1.2em solid #21ba45;
-} */
+.test-overlay-full {
+  width: 100%;
+  position:fixed;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
 
 .ser-home-p {
   width: 60%;
