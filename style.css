@@ -1622,6 +1622,44 @@ p:last-child {
     padding: 1.5rem 0 0 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .mobile-only {
+    display: flex !important;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+  /* #quote-wrap {
+    display: none !important;
+  }
+  #quote-wrap-mobile {
+    display: flex !important;
+  } */
+
+  /* .contact-container{
+    display: none !important;
+  }
+  .contact-container-mobile{
+    padding-top: 10%;
+    display: flex !important;
+  } */
+  .test-header {
+    font-size: 2.8em;
+  }
+  .rew {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none !important;
+  }
+  .desktop-only {
+    display: flex !important;
+  }
+}
 
 @media screen and (max-width: 760px) {
 
@@ -1845,14 +1883,25 @@ p:last-child {
 .circle.five {
   width: 210px;
   height: 210px;
-  top: 529px;
+  top: 559px;
   right: -95px;
   border: 1em solid #1f2f44;
 }
 
   .popup .foot-pop {
     width: 100px;
-    margin-left: -150px;
+    /* margin-left: -150px; */
+  }
+  .popup .popuptext::after {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    /* transform: rotate(-90deg); */
+    margin-right: 0px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #21ba45 transparent transparent transparent;
   }
   .modal-box p {
     font-size: 0.7em;
@@ -2187,6 +2236,7 @@ p:last-child {
 }
 
 /*responsiveness*/
+
 @media screen and (max-width: 515px) {
   .text-block {
     width: 80%;
@@ -2331,44 +2381,7 @@ p:last-child {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
   font-size: 1.4em;
 }
-@media screen and (max-width: 768px) {
-  .mobile-only {
-    display: flex !important;
-  }
 
-  .desktop-only {
-    display: none !important;
-  }
-  /* #quote-wrap {
-    display: none !important;
-  }
-  #quote-wrap-mobile {
-    display: flex !important;
-  } */
-
-  /* .contact-container{
-    display: none !important;
-  }
-  .contact-container-mobile{
-    padding-top: 10%;
-    display: flex !important;
-  } */
-  .test-header {
-    font-size: 2.8em;
-  }
-  .rew {
-    margin: 20px 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-only {
-    display: none !important;
-  }
-  .desktop-only {
-    display: flex !important;
-  }
-}
 
 
 
