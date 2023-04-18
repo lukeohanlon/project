@@ -1,22 +1,22 @@
 // **************** Luke *****************
 let modalContent = document.getElementById('modal-txt')
 let modalChoice = ''
-showModal = (e) => {
+showModal = e => {
   var modalChoice = document.getElementById(e)
-  
-  modalChoice.style.display = "flex"
-  modal.style.opacity = "1"
-  modal.style.zIndex = "15"
-  modalBox.style.transform = "translate(0)"
+
+  modalChoice.style.display = 'flex'
+  modal.style.opacity = '1'
+  modal.style.zIndex = '15'
+  modalBox.style.transform = 'translate(0)'
 }
 closeModal = () => {
-  [].forEach.call(texts, (text) => {
-    text.style.display = "none"
+  ;[].forEach.call(texts, text => {
+    text.style.display = 'none'
   })
-  
-  modal.style.opacity = "0"
-  modal.style.zIndex = "10"
-  modalBox.style.transform = "translate(-100%)"
+
+  modal.style.opacity = '0'
+  modal.style.zIndex = '10'
+  modalBox.style.transform = 'translate(-100%)'
   // modalContent.style.display = 'none'
 }
 if (document.getElementById('home') != null) {
@@ -51,47 +51,47 @@ if (document.getElementById('home') != null) {
     slideCont.scrollLeft -= slideWidth
   })
 
-function popUp() {
-  var popup = document.getElementById('myPopup')
-  popup.classList.toggle('show')
-  setTimeout(() => {
+  function popUp() {
+    var popup = document.getElementById('myPopup')
     popup.classList.toggle('show')
-  },1500)
+    setTimeout(() => {
+      popup.classList.toggle('show')
+    }, 1500)
+  }
+  function popUpFooter() {
+    var popup2 = document.getElementById('myPopupFooter')
+    popup2.classList.toggle('show')
+    setTimeout(() => {
+      popup2.classList.toggle('show')
+    }, 1500)
+  }
+
+  let texts = document.getElementsByClassName('modal-txt')
+  let modal = document.getElementById('modal')
+  let modalBox = document.getElementById('modal-box')
+  showModal = e => {
+    var modalChoice = document.getElementById(e)
+
+    modalChoice.style.display = 'flex'
+    modal.style.opacity = '1'
+    modal.style.zIndex = '15'
+    modalBox.style.transform = 'translate(0)'
+  }
+  closeModal = () => {
+    ;[].forEach.call(texts, text => {
+      text.style.display = 'none'
+    })
+    modal.style.opacity = '0'
+    modal.style.zIndex = '1'
+    modalBox.style.transform = 'translate(-100%)'
+  }
 }
 function popUpFooter() {
   var popup2 = document.getElementById('myPopupFooter')
   popup2.classList.toggle('show')
   setTimeout(() => {
     popup2.classList.toggle('show')
-  },1500)
-}
-
-let texts = document.getElementsByClassName('modal-txt')
-let modal = document.getElementById('modal')
-let modalBox = document.getElementById('modal-box')
-showModal = (e) => {
-  var modalChoice = document.getElementById(e)
-
-  modalChoice.style.display = "flex"
-  modal.style.opacity = "1"
-  modal.style.zIndex = "15"
-  modalBox.style.transform = "translate(0)"
-}
-closeModal = () => {
-  [].forEach.call(texts, (text) => {
-    text.style.display = "none"
-  })
-  modal.style.opacity = "0"
-  modal.style.zIndex = "1"
-  modalBox.style.transform = "translate(-100%)"
-}
-}
-function popUpFooter() {
-  var popup2 = document.getElementById('myPopupFooter')
-  popup2.classList.toggle('show')
-  setTimeout(() => {
-    popup2.classList.toggle('show')
-  },1500)
+  }, 1500)
 }
 if (document.getElementById('contact')) {
   function popUp() {
@@ -99,8 +99,7 @@ if (document.getElementById('contact')) {
     popup.classList.toggle('show')
     setTimeout(() => {
       popup.classList.toggle('show')
-    },1500)
-    
+    }, 1500)
   }
   const inputs = document.querySelectorAll('.input')
 
@@ -123,30 +122,31 @@ if (document.getElementById('contact')) {
 
   var form = document.getElementById('f')
 
-  function sendSuccess(e) {
+  const form1 = document.querySelector('form')
+  form1.addEventListener('submit', e => {
     e.preventDefault()
-    setTimeout(() => {
-      let msg = document.getElementById("formMsg")
-      msg.style.display = 'flex'
-      msg.style.zIndex = '2000'
-    },1500)
-    
-    if (form.checkValidity()) {
-      alert('Adding Succesful!')
-    }
-  }
-
+    let msg = document.getElementById('formMsg')
+    setTimeout(
+      () => (document.querySelector('.fmsg').style.fontSize = '2.5em'),
+      10
+    )
+    document.querySelector('.succes-msg-wrap').style.display = 'flex'
+    document.querySelector('.succes-msg-content-wrap').style.display = 'flex'
+    msg.classList.add('show')
+    msg.style.zIndex = '2000'
+    setTimeout(() => form1.submit(), 2000)
+  })
 }
 
 function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginRight = "250px";
-  document.getElementById("modal-overlay").style.display = "flex !important"
+  document.getElementById('mySidebar').style.width = '250px'
+  document.getElementById('main').style.marginRight = '250px'
+  document.getElementById('modal-overlay').style.display = 'flex !important'
 }
 
 function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginRight= "0";
+  document.getElementById('mySidebar').style.width = '0'
+  document.getElementById('main').style.marginRight = '0'
 }
 
 /* ******** Anna ********* */

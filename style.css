@@ -586,10 +586,10 @@ button {
 }
 
 .circle {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   /* background: linear-gradient(135deg, transparent 20%, #21ba45); */
-  position: absolute;
-  border: .6em solid #21ba45;
+  /* position: absolute; */
+  /* border: .6em solid #21ba45; */
 }
 
 .circle.one {
@@ -972,17 +972,17 @@ form {
   margin-bottom: 0.7rem;
 }
 .succes-msg-wrap {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
-  z-index: 00;
+  z-index: 1000;
   height: 100%;
   width: 100%;
 }
 .succes-msg-content-wrap {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -991,26 +991,28 @@ form {
   color: #21ba45;
   padding: 50px;
   border-radius: 10px;
-  box-shadow: 0px 0px 50px rgb(0, 255, 89);
+  /* box-shadow: 0px 0px 50px rgb(0, 255, 89); */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 
 }
 .succes-msg-content-wrap .show {
-  animation: pop 0.3s linear 1;
+  display: flex;
+  transform: scale(1.2)
 }
-@keyframes pop{
-  50%  {transform: scale(1.2);}
-}
+
 .succes-msg-content-wrap h2 {
-  font-size: 2.5em;
+  font-size: .5em;
+  transition: all .2s ease-in-out;
 
 }
+
 .succes-msg-content-wrap .icon {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  color: #21ba45;
+  /* color: #21ba45; */
   font-size: 3em;
 
 }
