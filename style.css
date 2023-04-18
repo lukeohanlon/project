@@ -1029,7 +1029,7 @@ form {
 }
 
 .input {
-  width: 95%;
+  width: 100%;
   outline: none;
   border: 2px solid #fafafa;
   background: none;
@@ -1047,7 +1047,7 @@ textarea.input {
   border-radius: 20px;
   resize: none;
   overflow-y: auto;
-  width: 95%
+  width: 100%
 }
 
 
