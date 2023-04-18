@@ -58,6 +58,13 @@ function popUp() {
     popup.classList.toggle('show')
   },1500)
 }
+function popUpFooter() {
+  var popup2 = document.getElementById('myPopupFooter')
+  popup2.classList.toggle('show')
+  setTimeout(() => {
+    popup2.classList.toggle('show')
+  },1500)
+}
 
 let texts = document.getElementsByClassName('modal-txt')
 let modal = document.getElementById('modal')
@@ -79,7 +86,13 @@ closeModal = () => {
   modalBox.style.transform = "translate(-100%)"
 }
 }
-
+function popUpFooter() {
+  var popup2 = document.getElementById('myPopupFooter')
+  popup2.classList.toggle('show')
+  setTimeout(() => {
+    popup2.classList.toggle('show')
+  },1500)
+}
 if (document.getElementById('contact')) {
   function popUp() {
     var popup = document.getElementById('myPopup')
@@ -87,6 +100,7 @@ if (document.getElementById('contact')) {
     setTimeout(() => {
       popup.classList.toggle('show')
     },1500)
+    
   }
   const inputs = document.querySelectorAll('.input')
 
@@ -109,8 +123,14 @@ if (document.getElementById('contact')) {
 
   var form = document.getElementById('f')
 
-  function sendSuccess() {
+  function sendSuccess(e) {
     e.preventDefault()
+    setTimeout(() => {
+      let msg = document.getElementById("formMsg")
+      msg.style.display = 'flex'
+      msg.style.zIndex = '2000'
+    },1500)
+    
     if (form.checkValidity()) {
       alert('Adding Succesful!')
     }

@@ -5,28 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.min.js"
-      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"
-      defer
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400&family=Oswald:wght@200;300;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="stylesheet" type="text/css" href="critical.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Swift | About Us</title>
   </head>
@@ -45,11 +24,9 @@
         </button>
       </a>
     </div>
-
     <div id="about" class="pusher">
       <div class="top-nav">
-        <a href="index.html" class="logo-link"
-          ><img class="logo" src="./media/4.webp"
+        <a href="index.html" class="logo-link"><img class="logo" src="./media/4.webp"
         /></a>
         <div class="menu-top">
           <a class="menu-item" href="index.html">Home</a>
@@ -58,26 +35,21 @@
           <a class="menu-item" href="services.html">Services</a>
           <a class="menu-item" href="Testimonials.html">Testimonials</a>
           <a class="menu-item" href="contact.html">Contact</a>
-          <a class="menu-item-call" href="tel:0871234567"
-            ><button
+          <a class="menu-item-call" href="tel:0871234567"><button
               onclick=""
               class="phone-menu nav-call-btn"
-              aria-label="phone-button"
-            >
+              aria-label="phone-button">
               Call Us
-              <span class="iphone"><i class="phone icon"></i></span></button
-          ></a>
+              <span class="iphone"><i class="phone icon"></i></span></button></a>
         </div>
         <button
           class="mobile-menu-btn"
           aria-label="mobile-menu-button"
-          onclick="$('.ui.sidebar').sidebar('toggle')"
-        >
+          onclick="$('.ui.sidebar').sidebar('toggle')">
           <i class="bars icon"></i>
         </button>
       </div>
       <!-- Site content !-->
-
       <div class="about-wrap">
         <div class="about-banner">
           <div class="work-overlay"></div>
@@ -112,9 +84,7 @@
               Call us on
               <a href="tel:0891234567" class="aboutlinks">087-123-4567 </a>or
               email
-              <a href="mailto:info@swifthomemaintenance.ie" class="aboutlinks"
-                >info@swifthomemaintenance.ie</a
-              >
+              <a href="mailto:info@swifthomemaintenance.ie" class="aboutlinks">info@swifthomemaintenance.ie</a>
             </p>
           </div>
           <img
@@ -143,11 +113,9 @@
             </ul>
 
             <p>Need more information? Get a free quote from us today.</p>
-            <a href="contact.html"
-              ><button class="phone-menu work-button" aria-label="phone-button">
+            <a href="contact.html"><button class="phone-menu work-button" aria-label="phone-button">
                 Get a Free Quote
-              </button></a
-            >
+              </button></a>
           </div>
         </div>
         <div class="info-section info-right reverse">
@@ -177,9 +145,7 @@
               Call us on
               <a href="tel:0891234567" class="aboutlinks">087-123-4567 </a>or
               email
-              <a href="mailto:info@swifthomemaintenance.ie" class="aboutlinks"
-                >info@swifthomemaintenance.ie</a
-              >
+              <a href="mailto:info@swifthomemaintenance.ie" class="aboutlinks">info@swifthomemaintenance.ie</a>
             </p>
           </div>
         </div>
@@ -315,18 +281,16 @@
               <div class="foot-head">
                 <h3 class="footer-heading">Contact</h3>
               </div>
-              <a href="tel:0871234567"
-                ><i class="phone footer-icon icon"></i> Phone</a
-              >
-              <a href="mailto:info@swift.com"
-                ><i class="envelope footer-icon icon"></i> Email</a
-              >
-              <a href="https://facebook.com"
-                ><i class="facebook footer-icon icon"></i> Facebook</a
-              >
-              <a href="https://wa.me/+353871234567"
-                ><i class="whatsapp footer-icon icon"></i> WhatsApp</a
-              >
+              <a href="tel:0871234567"><i class="phone footer-icon icon"></i> Phone</a>
+              <a href="mailto:info@swift.com"><i class="envelope footer-icon icon"></i> Email</a>
+              <a
+              onclick="popUpFooter()"
+              class="popup"
+              href="javascript:void(0)">
+              <span class="popuptext foot-pop" id="myPopupFooter">Coming Soon!</span>
+              <i class="facebook footer-icon icon"></i> Facebook
+            </a>
+              <a href="https://wa.me/+353871234567"><i class="whatsapp footer-icon icon"></i> WhatsApp</a>
             </div>
             <div class="footer-content-bottom">Group F © | 2023</div>
           </div>

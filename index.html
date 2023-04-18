@@ -328,60 +328,61 @@ Anna Samus
           </a>
         </div>
       </div>
-      <div id="quote-wrap-mobile">
-        <div class="quote-overlay"></div>
-        <div class="quote-content">
-          <a href="tel:085-140-4957">
-            <button class="quote-btn" aria-label="quote-button">
-              <h2 class="quote-heading">
-                Call Today For A <span id="free-txt">FREE</span> Quote!
-              </h2>
-            </button>
-          </a>
-        </div>
-      </div>
-      <!-- services modal section -->
       <div class="services-wrap">
-        <div class="section-heading-wrap">
-          <h3 class="section-heading">Services</h3>
-        </div>
+        <span class="circle three"></span>
+        <span class="circle two"></span>
+
+        <span class="circle five"></span>
+        <span class="one circle"></span>
+
+
+        <span class="circle seven"></span>
+        <span class="four circle"></span>
+       
         <div class="services-content">
+          <div class="section-heading-wrap">
+            <h3 class="section-heading shead">Services</h3>
+          </div>
+       <p class="ser-home-info"> Click on the items below to view some of our services: </p>
           <div class="services-content-1">
-            <ul>
+            <ul class="ser-left">
               <li onclick="showModal('land')" class="services-item">
                 Landscaping
               </li>
-              <li onclick="showModal('roof')" class="services-item">
-                Roof Cleaning
+             
+              <li onclick="showModal('pcv')" class="services-item">
+                PVC Cleaning
               </li>
               <li onclick="showModal('gutter')" class="services-item">
                 Gutter Cleaning
               </li>
-              <li onclick="showModal('pcv')" class="services-item">
-                PVC Cleaning
+              <li onclick="showModal('house')" class="services-item">
+                House Wash Down
               </li>
             </ul>
-            <ul>
+            <ul class="ser-right">
               <li onclick="showModal('grass')" class="services-item">
                 Rolled Grass
               </li>
               <li onclick="showModal('tree')" class="services-item">
                 Tree Surgeon
               </li>
-              <li onclick="showModal('house')" class="services-item">
-                House Wash Down
+              <li onclick="showModal('roof')" class="services-item">
+                Roof Cleaning
               </li>
+              
               <li onclick="showModal('drive')" class="services-item">
                 Driveway Cleaning
               </li>
             </ul>
           </div>
-        </div>
-        <a class="main-btn-serv" href="services.html"
-          ><button aria-label="learn-more" class="main-btn">
+          <a class="main-btn-serv" href="services.html"
+          ><button aria-label="learn-more" class="main-btn s-btn">
             More Services
           </button></a
         >
+        </div>
+        
       </div>
 <!-- Testimonial slider  -->
       <div class="testimonial-section-wrap">
@@ -443,7 +444,7 @@ Anna Samus
               </div>
             </li>
             <li class="slide">
-              <h2 class="testimonial-heading">Definitely Reccomend</h2>
+              <h2 class="testimonial-heading">Definitely Recommend</h2>
               <p class="testimonial-txt">
                 Very pleased with Swift Home Maintenance. They did an excellent
                 job putting an a new fence and it was painted beautifully. My
@@ -489,24 +490,28 @@ Anna Samus
             <a href="services.html#trimming">Trimming</a>
             <a href="services.html#roof">Roof Repairs</a>
           </div>
-          <div class="footer-content">
+          <div class="footer-content contact-footer">
             <div class="foot-head">
               <h3 class="footer-heading">Contact</h3>
             </div>
             <a href="tel:0871234567"
               ><i class="phone footer-icon icon"></i> Phone</a
             >
-            <a href="mailto:info@swiftmaintenance.ie"
+            <a href="mailto:info@swift.com"
               ><i class="envelope footer-icon icon"></i> Email</a
             >
-            <a href="https://facebook.com"
-              ><i class="facebook footer-icon icon"></i> Facebook</a
-            >
+            <a
+            onclick="popUpFooter()"
+            class="popup"
+            href="javascript:void(0)"
+          >
+            <span class="popuptext foot-pop" id="myPopupFooter">Coming Soon!</span>
+            <i class="facebook footer-icon icon"></i> Facebook
+          </a>
             <a href="https://wa.me/+353871234567"
               ><i class="whatsapp footer-icon icon"></i> WhatsApp</a
             >
           </div>
-          <!-- Bottom Bar -->
           <div class="footer-content-bottom">Group F © | 2023</div>
         </div>
       </footer>
