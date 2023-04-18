@@ -44,6 +44,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: #000;
 }
 
 .ui.inverted.menu .active.item {
@@ -491,18 +492,7 @@ button {
   object-position: center;
   z-index: 10;
 }
-/* #quote-wrap-mobile {
-  height: 300px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background-image: url('./media/quote-img.webp');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-position: center;
-  z-index: 1;
-} */
+
 .quote-overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
@@ -568,10 +558,6 @@ button {
   font-weight: 300;
 }
 
-.services-item {
-  padding: 0 0 20px 0;
-}
-
 .services-content {
   display: flex;
   align-items: center;
@@ -580,7 +566,7 @@ button {
   font-size: 1.3em;
   color: #000;
   padding: 0;
-  z-index: 14 !important;
+  z-index: 10;
   background-color: #f2f2f2;
   background-color: #fff;
   box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.7);
@@ -611,8 +597,13 @@ button {
   height: 180px;
   top: 250px;
   right: -75px;
+}
 
-
+.test-overlay-full {
+  width: 100%;
+  position:fixed;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .circle.four {
@@ -681,19 +672,19 @@ button {
   /* cursor: pointer; */
 }
 .services-content a {
-  z-index: 14 !important;
+  z-index: 10;
   /* cursor: pointer; */
 }
 .services-item {
-  z-index: 14 !important;
+  padding: 10px;
   cursor: pointer;
   font-size: 1.2em;
   line-height: 1.42em;
 }
 .services-item:hover {
-  z-index: 14 !important;
+  
   cursor: pointer;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.42em;
   color: #21ba45;
 }
@@ -1303,21 +1294,6 @@ p:last-child {
   border-bottom: #94949480 1px solid;
 }
 
-/* .work-history {
-  background-image: url('./media/work-landscaping.webp');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  min-height: 700px;
-  width: 96%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: 0 2%;
-  clip-path: polygon(100% 0, 100% 83%, 91% 100%, 0 100%, 0 0);
-} */
-
 .work-history {
   background-image: url(./media/work-landscaping.webp);
   background-position: center;
@@ -1346,16 +1322,6 @@ p:last-child {
   font-weight: 300;
 }
 
-/* .text-block {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 2em;
-  margin: 2em 0 0 4em;
-  width: 30%;
-  min-height: 64%;
-  clip-path: polygon(100% 0, 100% 83%, 80% 100%, 0 100%, 0 0);
-  font-weight: 300;
-} */
 .text-block p {
   font-size: 18px;
   line-height: 1em;
@@ -1658,10 +1624,13 @@ p:last-child {
 }
 
 @media screen and (max-width: 760px) {
+
   .quote-heading {
     font-size: 2em;
   }
-
+  .test-quote {
+    font-size: 1.5em;
+  }
   .services-item {
     text-align: center;
   }
@@ -2237,7 +2206,7 @@ p:last-child {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 400px;
+  padding-top: 300px;
 }
 
 .test-btn-contact {
@@ -2258,11 +2227,11 @@ p:last-child {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+ margin-top: 200px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  
 }
 
 .test-header {

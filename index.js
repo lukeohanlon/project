@@ -15,7 +15,7 @@ closeModal = () => {
   })
   
   modal.style.opacity = "0"
-  modal.style.zIndex = "1"
+  modal.style.zIndex = "10"
   modalBox.style.transform = "translate(-100%)"
   // modalContent.style.display = 'none'
 }
